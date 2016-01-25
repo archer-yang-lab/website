@@ -1,0 +1,33 @@
+# jemdoc: menu{MENU}{pub.html},nofooter,addcss{custom.css},analytics{UA-7506982-8}
+= Resources
+
+Slides
+
+- A brief [http://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/ introduction to “apply” in R]
+- Chalie’s [http://users.stat.umn.edu/~geyer/parallel/ webpage]
+ and [http://users.stat.umn.edu/~geyer/parallel/parallel.pdf slides] on parallel computing
+- [http://www.math.mcgill.ca/yyang/resources/slides/snow1.pdf Introduction to “snow”], by Yi Yang	
+([http://www.math.mcgill.ca/yyang/resources/slides/ex1.R Example 1], 
+	[http://www.math.mcgill.ca/yyang/resources/slides/ex2.R Example 2])
+- [http://users.stat.umn.edu/~yixxx064/parallel/snowExample.pdf Parallel with snow], by Feng Yi
+
+LaTeX
+	
+- [http://en.wikibooks.org/wiki/LaTeX LaTeX - Wikibooks]
+- [http://www.tug.org/pracjourn/2006-1/schmidt/schmidt.pdf Font selection in LaTeX]: The most frequently asked questions
+- [ftp://tug.ctan.org/ctan/macros/latex/required/psnfss/psnfss2e.pdf Using common PostScript fonts with LaTeX]
+- [http://www.math.mcgill.ca/yyang/resources/latex/latex_envelope_print.zip Letter envelope LaTeX template] edited by Yi Yang
+
+R
+
+- [http://had.co.nz/ggplot2/ ggplot2] homepage
+- [http://adv-r.had.co.nz/ Advanced R] by Hadley Wickham
+- [http://yihui.name/en/ Yihui Xie’s homepage]: Statistics, R, Graphics and Fun
+- A very intensive [http://www.stat.harvard.edu/ccr2005/ C\/C\+\+\/R (in statistics) course from Harvard]
+- [http://rgm2.lab.nig.ac.jp/RGM2 R Graphical Manual]
+- [http://learnr.files.wordpress.com/2009/08/latbook.pdf ggplot2 Version of Figures] in “Lattice: Multivariate Data Visualization with R”
+- [http://dirk.eddelbuettel.com/code/rcpp/Rcpp-introduction.pdf Introduction to Rcpp]
+
+Fortran
+
+- [http://jblevins.org/mirror/amiller/ Fortran Software from Alan Miller]

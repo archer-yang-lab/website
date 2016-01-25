@@ -1,0 +1,50 @@
+# jemdoc: menu{MENU}{soft.html},nofooter,addcss{custom.css},analytics{UA-7506982-8}
+= Software
+
+
+*High-dimensional Statistical Inference*
+
+ 
+- [http://cran.r-project.org/web/packages/fastcox fastcox] \n 
+Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. 
+
+ 
+- [http://cran.r-project.org/web/packages/gcdnet gcdnet] \n 
+Lasso and (adaptive) elastic-net penalized least squares, logistic regression, HHSVM and squared hinge loss SVM using a fast GCD algorithm. 
+
+ 
+- [http://cran.r-project.org/web/packages/gglasso gglasso] \n
+Group lasso penalized learning using a unified BMD algorithm. 
+
+ 
+- [http://cran.r-project.org/web/packages/glmvsd/index.html glmvsd] \n 
+Variable selection deviation measures and instability tests for high-dimensional generalized linear models. 
+
+ 
+- [http://cran.r-project.org/web/packages/msda/index.html msda] \n 
+Efficient procedures for computing a new multi-class sparse discriminant analysis method that estimates all discriminant directions simultaneously. 
+
+*Tweedie Models* (Insurance Pricing)
+ 
+- [http://cran.r-project.org/web/packages/HDtweedie HDtweedie] \n
+The lasso for the Tweedie’s compound poisson model using an IRLS-BMD algorithm.
+
+ 
+- [http://cran.r-project.org/web/packages/TDboost TDboost] \n 
+A Boosted Nonparametric Tweedie Model.
+
+*Expectile Regression* (Risk Management)
+
+ 
+- [http://cran.r-project.org/web/packages/erboost erboost] \n 
+Nonparametric multiple expectile regression via ER-Boost.
+
+ 
+- [http://cran.r-project.org/web/packages/KERE KERE] \n 
+Expectile Regression in Reproducing Kernel Hilbert Space.
+
+
+*Envelop Models*
+- [http://code.google.com/p/envlp envlp] \n
+A MATLAB toolbox for computing envelope estimators in multivariate linear regression.
+

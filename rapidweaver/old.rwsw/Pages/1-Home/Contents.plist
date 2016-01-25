@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>ID</key>
+				<string>page1</string>
+				<key>MostRecentlySelectedStyleName</key>
+				<string>Theme Default</string>
+				<key>PageTitle</key>
+				<string>Home</string>
+				<key>PluginClassName</key>
+				<string>YHBlocksPlugin</string>
+				<key>PluginMetadata</key>
+				<dict>
+					<key>Author</key>
+					<string>Isaiah Carew - YourHead Software</string>
+					<key>Name</key>
+					<string>Blocks</string>
+				</dict>
+				<key>PublishingManifest</key>
+				<dict>
+					<key>CreationDate</key>
+					<date>2015-09-04T18:33:37Z</date>
+					<key>DigestAlgorithm</key>
+					<string>MD5</string>
+					<key>DocumentGUID</key>
+					<string>CFC6CC3B-EADF-4A98-886C-917243C91ADB</string>
+					<key>PageDigests</key>
+					<dict>
+						<key>files/blocks_image_0_1.png</key>
+						<dict>
+							<key>Digest</key>
+							<data>
+							zk+nPVXYGjlGuYz7fdZD
+							vQ==
+							</data>
+							<key>Size</key>
+							<integer>19282</integer>
+						</dict>
+						<key>index.html</key>
+						<dict>
+							<key>Digest</key>
+							<data>
+							H8JWDOPs1WSwZ4Z8Yvu6
+							aw==
+							</data>
+							<key>Size</key>
+							<integer>3955</integer>
+						</dict>
+						<key>rw_common/version.txt</key>
+						<dict>
+							<key>Digest</key>
+							<data>
+							N+zSdghICqNWmlEaY4yn
+							Tw==
+							</data>
+							<key>Size</key>
+							<integer>4</integer>
+						</dict>
+					</dict>
+					<key>PageID</key>
+					<string>page1</string>
+					<key>SiteRoot</key>
+					<string></string>
+					<key>Version</key>
+					<integer>3</integer>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array>
+				<string>Data.archive</string>
+			</array>
+			<key>Subsandwiches</key>
+			<array>
+				<string>PageAttributes</string>
+			</array>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page</string>
+</dict>
+</plist>

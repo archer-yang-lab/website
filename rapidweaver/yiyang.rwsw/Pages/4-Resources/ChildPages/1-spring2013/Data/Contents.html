@@ -1,0 +1,403 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>
+STAT 3022: Data Analysis
+</title>
+</head>
+
+<body>
+<font face="GARAMOND"
+
+<basefont size="4">
+
+<h2> <center> <p>STAT 3022: Data Analysis</p> Spring 2013 </center> </h2><p>
+
+</p><h3>
+<font color="#FF9933">General Information:</font>	</h3>	
+STAT 3022, Lecture #009: MWF, 11:15 A.M. - 12:05 P.M. in RapsonH  31 </a><p>
+STAT 3022, Lab #010: Tu, 10:10 am - 11:00 am in VinH  1</a><p>
+STAT 3022, Lab #011: Tu, 11:15 am - 12:05 pm in FordH  110 </a><p>
+
+
+</p><h3> 
+<font color="#FF9933">Instructor: </font></h3><p>
+Yi Yang </p><p>
+Email: yiyang@umn.edu </p><p>
+Office: FordH 472</p><p>
+Office hour: 350 Ford Hall, Monday, 10:00 am - 11:00 am, Wednesday, 10:00am - 11:00am.
+
+
+</p><h3> 
+<font color="#FF9933">Teaching Assistant: </font>
+</h3><p>
+
+Lab #010: Li, Chunlei, Email: lixx2788@umn.edu</p><p>
+Office hour: Tuesday 11:15 am - 12:15 pm </p><p>
+Lab #011: Xiang, Ding, Email: xiang045@umn.edu</p><p>
+Office hour: Wednesday 2:20 pm - 3:20 pm</p><p>
+
+</p><h3> 
+<font color="#FF9933">Course Description: </font>
+</h3><p>
+Further topics in regression and ANOVA; non-parametric methods; model selection and verification; use of statistical software; additional selected topics.
+</p><p>
+	
+</p><h3>
+<font color="#FF9933">Prerequisites: </font>
+</h3><p>
+STAT 3011 or 3021 or equivalent. <font color="FF0000">(This is a very important requirement. Talk to the instructor if you didn't take any introductory statistics course before.)</font></p><p>
+	
+Mathematics knowledge: algebra only, no calculus needed to take this course.</p><p>
+
+
+</p><h3> 
+<font color="#FF9933">Textbook: </font>
+</h3><p>
+Officially, the textbook is
+Fred Ramsey and Dan Schafer (2012) <i> <a href="http://www.amazon.com/The-Statistical-Sleuth-Methods-Analysis/dp/1133490670/ref=dp_ob_title_bk">
+	The Statistical Sleuth</a></i> (3rd Edition) </p><p>
+But second edition is fine: 
+Fred Ramsey and Dan Schafer (2002) <i> <a href="http://www.amazon.com/Statistical-Sleuth-Course-Methods-Analysis/dp/0534386709/ref=sr_1_1?ie=UTF8&qid=1324812998&sr=8-1"> 
+The Statistical Sleuth</a></i> (2nd Edition).</p><p>
+<p>The homework problems are from the 3rd edtion textbook. In case some students still use the old one, each time scanned homework problems will be posted on moodle site.</p>
+<font color="#FF0000"> The difference of these two editions is not significant, and new materials in 3rd edition will NOT be covered in our course.</font></p>
+<p>
+
+
+
+</p><h3> 
+<font color="#FF9933">Homework: </font>
+</h3><p>
+Homework will be assigned on a weekly basis and it is <b>due on Wednesday class</b>. </p><p>
+It is fine for students to work together on homework problems (and you are encouraged to do so, since some of the problems will be challenging), but the write-up of solutions must be done independently. Your understanding of 
+the homework will be tested in each exam. It is your responsibility to seek help on problems that you cannot work out. </p>
+
+</p><h3> 
+<font color="#FF9933">Exam Schedule:</font>
+</h3><p>
+
+1st Mid-term exam: Tuesday lab, Feb 5</p><p>
+2ed Mid-term exam: Tuesday lab, Mar 5</p><p>
+Final exam: 8:00 a.m.–10:00 a.m., Wednesday, May 15<p>
+For midterms, you can bring a two-sided, letter-size (A4) cheatsheet. For the final, you can bring two cheatsheets.
+</p><p>
+
+<font color="#FF0000"> If the exam date above overlaps with another exam you have, you need to inform the instructor and resolve this <b>by the first three weeks of class</b>. 
+</p><p>
+You cannot miss any exams. Make-up will be given only for emergencies (proper documents must be submitted).
+Otherwise, if you miss anyone of them, you will receive a zero. Note that social/vacation plans are not legitimate reasons for missing an exam. </font>
+</p><p>
+</p><p>
+
+</p><h3> 
+<font color="#FF9933">Grading: </font>
+</h3>
+<p><b>Homework</b>: 35% (There will be 10 hws)</p>
+<p><b>1st Mid-term Exam</b>: 15%</p>
+<p><b>2ed Mid-term Exam</b>: 15%</p>
+<p><b>Final Exam</b>: 35%</p>
+<p><b>Extra credits</b>: pop quiz 5% (10 minutes in class, open book, open notes)</p>
+<p>Your final grade for this course will be determined entirely by your performance on homeworks and all exams. 
+<font color="#FF0000"> Final grade will be curved. Top 30% student will get at least A/A-, the next 40% will get at least B+/B/B-, and the rest will get C+/C/D/F.</font> If you are taking the class S/N, you will need a C or higher to earn an S grade. </p><p>
+
+
+</p><h3> 
+<font color="#FF9933">Tentative Schedule:</font>
+</h3><p>
+
+<!-- Text Class Preamble -->
+<style type="text/css">
+div.toc {
+margin: 2em 0em;
+border-style: solid;
+border-width: 2px 0px;
+padding: 1em 0em;
+}
+div.tochead { font-size: x-large; font-weight: bold; }
+div.lyxtoc-0 {
+margin: 2em 0em 0em 0em;
+font-size: xx-large;
+font-weight: bold;
+}
+div.lyxtoc-1 {
+margin: 1em 0em 0em 0em;
+font-size: x-large;
+font-weight: bold;
+}
+div.lyxtoc-2 {
+margin: 0em 0em 0em 1em;
+font-size: large;
+font-weight: normal;
+}
+div.lyxtoc-3 { margin: 0em 0em 0em 0.5em; font-size: medium; }
+div.lyxtoc-4 { margin: 0em 0em 0em 0.5em; }
+div.lyxtoc-5 { margin: 0em 0em 0em 0.5em; }
+div.lyxtoc-6 { margin: 0em 0em 0em 0.5em; }
+a.tocentry {
+text-decoration: none;
+color: black;
+}
+a.tocentry:visited { color: black; }
+a.tocarrow {
+font-weight: bold;
+text-decoration: none;
+color: #909090;
+}
+a.tocarrow:visited { color: #C0C0C0; }
+</style>
+
+<!-- Preamble Snippets -->
+<style type="text/css">
+table { border: 1px solid black; display: inline-block; }
+td { border: 1px solid black; padding: 0.5ex; }
+</style>
+
+
+
+<div class="standard" style="text-align: center;"><a id="magicparlabel-3693" />
+
+
+
+<table><tbody><tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3801" />
+Time</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3804" />
+Chapter</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3807" />
+Topic</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3810" />
+Week 1 </div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3813" />
+1,2</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3816" />
+Introduction; One-sample t-test, Paired t-test</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3819" />
+Week 2 </div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3822" />
+2,3</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3825" />
+Two-sample t-test</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3828" />
+Week 3</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3831" />
+7</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3834" />
+Simple Linear Regression</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3837" />
+Week 4</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3840" />
+8</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3843" />
+Simple Linear Regression: Assumptions</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3846" />
+Week 5</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3849" />
+9</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3852" />
+Multiple Regression</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3855" />
+Week 6</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3858" />
+10</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3861" />
+Multiple Regression: Inferential Tools</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3864" />
+Week 7</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3867" />
+11</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3870" />
+Multiple Regression: Model Checking and Refinement</div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3873" />
+Week 8</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3876" />
+12</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3879" />
+Multiple Regression: Variable Selection </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3882" />
+Week 9</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3885" />
+20, 21</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3888" />
+Logistic Regression </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3891" />
+Week 10</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3894" />
+22</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3897" />
+Poisson Regression </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3900" />
+Week 11</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3903" />
+5</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3906" />
+Comparisons among Several Samples </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3909" />
+Week 12</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3912" />
+13</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3915" />
+ANOVA for Two-Way Classifications </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3918" />
+Week 13</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3921" />
+18</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3924" />
+Comparisons of Proportions or Odds </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3927" />
+Week 14</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3930" />
+19 </div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3933" />
+Tables of Counts </div>
+</td>
+</tr>
+<tr><td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3936" />
+Week 15</div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3939" />
+not in the textbook </div>
+</td>
+
+<td align="center" valign="top"><div class="plain_layout"><a id="magicparlabel-3942" />
+Bootstrap; Cross-Validation </div>
+</td>
+</tr></tbody>
+</table>
+</div>
+
+</p><h3> 
+<font color="#FF9933">R computing: </font>
+</h3><p>
+
+R homepage: <a href="http://www.r-project.org/"> http://www.r-project.org/</a><p>
+R download: <a href="http://cran.wustl.edu/"> http://cran.wustl.edu </a><p>
+RStudio: <a href="http://www.rstudio.com/ide/download/desktop">http://www.rstudio.com/ide/download/desktop</a> (You are required to download and install Rstudio after you install R)<p>
+R tutorial: <p>
+1. <a href="http://users.stat.umn.edu/~yixxx064/Rtutorial.pdf"> http://users.stat.umn.edu/~yixxx064/Rtutorial.pdf</a>, <p> 
+2. <a href="http://users.stat.umn.edu/~yixxx064/GettingStartedWithR.pdf"> http://users.stat.umn.edu/~yixxx064/GettingStartedWithR.pdf</a> <p> (<b>The first tutorial will be tested on the first in-class midterm.</b>)<p>
+R package: Sleuth2 <p>
+The following is a list of materials on R. At this stage I am not particularly expecting you to use them (and certainly not to read them all), but I hope this list will be useful in the future. <p>
+
+R manual: <a href="http://cran.mtu.edu/doc/manuals/R-intro.pdf"> http://cran.mtu.edu/doc/manuals/R-intro.pdf</a> (This is a long introduction, you don't have to read it if you didn't use R before.)<p>
+
+R books: The Art of R Programming, R cookbook.</p>
+
+</p><h3> 
+<font color="#FF9933">Incompletes:</font>
+</h3><p>
+
+University and department policy is that "I" grades are used only when there is a small amount of unfinished work that the student can complete on his or her own before the end of the following semester, when there was a legitimate excuse why the work could not be done on time, and when arrangements have been made with the instructor as to when the work will be done. "I" grades are not given when there is a large amount of work undone and the student would need to attend the class in the next semester to learn the material. 
+</p><p>
+
+</p><h3>
+<font color="#FF9933">Disability Access Statement:</font>
+</h3><p>
+
+Please contact Mary, School of Statistics, 313 Ford, 625-7300. </p><p>
+
+
+
+</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7898414; 
+var sc_invisible=0; 
+var sc_security="7d956ceb"; 
+</script>
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7898414/0/7d956ceb/0/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body></html>

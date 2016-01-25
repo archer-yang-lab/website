@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SandwichFillings</key>
+	<array>
+		<dict>
+			<key>Dictionary</key>
+			<dict>
+				<key>Changed</key>
+				<false/>
+				<key>ColourStyles</key>
+				<dict>
+					<key>BlocksBox</key>
+					<dict/>
+					<key>CA Splash</key>
+					<dict/>
+					<key>Cameo</key>
+					<dict/>
+					<key>Caribou</key>
+					<dict/>
+					<key>Realmac Software '06</key>
+					<dict>
+						<key>%colour_body_background%</key>
+						<string>#EDEDED</string>
+						<key>%colour_text%</key>
+						<string>#000000</string>
+					</dict>
+					<key>Simple</key>
+					<dict/>
+				</dict>
+				<key>CreditRapidWeaver</key>
+				<false/>
+				<key>CustomCSS</key>
+				<string>#pageHeader h1{
+font-size:24px;
+}
+
+table { 
+  border: 0; 
+  font-family: "Helvetica", "Arial", Helvetica, sans-serif;
+  font-size:16px; 
+  border-spacing:0.3em;
+} 
+
+p.small {line-height:200%}
+br{
+line-height:22px;
+}</string>
+				<key>CustomCopyright</key>
+				<string>&lt;!-- Start of StatCounter Code for Default Guide --&gt;
+&lt;script type="text/javascript"&gt;
+var sc_project=7898414; 
+var sc_invisible=0; 
+var sc_security="7d956ceb"; 
+&lt;/script&gt;
+&lt;script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"&gt;&lt;/script&gt;
+&lt;noscript&gt;&lt;div class="statcounter"&gt;&lt;a title="joomla visitor"
+href="http://statcounter.com/joomla/" target="_blank"&gt;&lt;img
+class="statcounter"
+src="http://c.statcounter.com/7898414/0/7d956ceb/0/"
+alt="joomla visitor"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/noscript&gt;
+&lt;!-- End of StatCounter Code for Default Guide --&gt;</string>
+				<key>CustomCopyrightUsed</key>
+				<true/>
+				<key>CustomHeader</key>
+				<string>&lt;!-- Start of StatCounter Code for Default Guide --&gt;
+&lt;script type="text/javascript"&gt;
+var sc_project=10606247; 
+var sc_invisible=1; 
+var sc_security="835c1ee8"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("&lt;sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'&gt;&lt;/"+"script&gt;");
+&lt;/script&gt;
+&lt;noscript&gt;&lt;div class="statcounter"&gt;&lt;a title="shopify site
+analytics" href="http://statcounter.com/shopify/"
+target="_blank"&gt;&lt;img class="statcounter"
+src="http://c.statcounter.com/10606247/0/835c1ee8/1/"
+alt="shopify site analytics"&gt;&lt;/a&gt;&lt;/div&gt;&lt;/noscript&gt;
+&lt;!-- End of StatCounter Code for Default Guide --&gt;</string>
+				<key>CustomSiteTitleUsed</key>
+				<false/>
+				<key>CustomSloganUsed</key>
+				<false/>
+				<key>DefaultLinkTarget</key>
+				<string>self</string>
+				<key>FilenameExtension</key>
+				<string>html</string>
+				<key>FolderName</key>
+				<string>/</string>
+				<key>HasCustomThemeStyle</key>
+				<false/>
+				<key>Hidden</key>
+				<false/>
+				<key>ImageFormat</key>
+				<string>Original</string>
+				<key>ImageQuality</key>
+				<string>High</string>
+				<key>IndexFilename</key>
+				<string>resource.html</string>
+				<key>MetaTags</key>
+				<array>
+					<dict>
+						<key>Content</key>
+						<string>always</string>
+						<key>Name</key>
+						<string>CHANGEFREQ</string>
+					</dict>
+				</array>
+				<key>OutputFormat</key>
+				<string>Default</string>
+				<key>OutputXMLDeclaration</key>
+				<false/>
+				<key>SidebarEnabled</key>
+				<integer>1</integer>
+				<key>TextEncoding</key>
+				<string>utf-8</string>
+				<key>ThemeStyles</key>
+				<dict>
+					<key>Realmac Software '06</key>
+					<array>
+						<string>Colours.Background Colour</string>
+						<string>Sidebar.Hide</string>
+						<string>Width.1000px</string>
+					</array>
+					<key>Simple</key>
+					<array>
+						<string>Sidebar.Right</string>
+						<string>Styles.Grey</string>
+						<string>Width.1000px</string>
+					</array>
+				</dict>
+			</dict>
+			<key>Files</key>
+			<array/>
+			<key>Subsandwiches</key>
+			<array/>
+		</dict>
+	</array>
+	<key>Type</key>
+	<string>Page Attributes</string>
+</dict>
+</plist>
