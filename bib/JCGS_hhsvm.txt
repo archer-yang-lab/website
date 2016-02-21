@@ -1,0 +1,10 @@
+@article{yang2013efficient,
+  title={An efficient algorithm for computing the HHSVM and its generalizations},
+  author={Yang, Yi and Zou, Hui},
+  journal={Journal of Computational and Graphical Statistics},
+  volume={22},
+  number={2},
+  pages={396--415},
+  year={2013},
+  publisher={Taylor \& Francis Group}
+}
