@@ -5,46 +5,48 @@
 *High-dimensional Statistical Inference*
 
  
-- [http://cran.r-project.org/web/packages/fastcox fastcox] \n 
-Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. 
+- [http://cran.r-project.org/web/packages/fastcox fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]\n
+Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. \n
+
 
  
-- [http://cran.r-project.org/web/packages/gcdnet gcdnet] \n 
-Lasso and (adaptive) elastic-net penalized least squares, logistic regression, HHSVM and squared hinge loss SVM using a fast GCD algorithm. 
+- [http://cran.r-project.org/web/packages/gcdnet gcdnet]~~~~[https://cran.r-project.org/web/packages/gcdnet/gcdnet.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[Paper\]] \n
+Lasso and (adaptive) elastic-net penalized least squares, logistic regression, HHSVM and squared hinge loss SVM using a fast GCD algorithm. \n
+
 
  
-- [http://cran.r-project.org/web/packages/gglasso gglasso] \n
-Group lasso penalized learning using a unified BMD algorithm. 
+- [http://cran.r-project.org/web/packages/gglasso gglasso]~~~~[https://cran.r-project.org/web/packages/gglasso/gglasso.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[Paper\]]\n
+Group lasso penalized learning using a unified BMD algorithm. \n
 
  
-- [http://cran.r-project.org/web/packages/glmvsd/index.html glmvsd] \n 
-Variable selection deviation measures and instability tests for high-dimensional generalized linear models. 
+- [http://cran.r-project.org/web/packages/glmvsd/index.html glmvsd]~~~~[https://cran.r-project.org/web/packages/glmvsd/glmvsd.pdf \[Doc\]]~~~~[http://www.tandfonline.com/doi/abs/10.1080/10618600.2013.829780 \[Paper\]]\n 
+Variable selection deviation measures and instability tests for high-dimensional generalized linear models. \n
 
  
-- [http://cran.r-project.org/web/packages/msda/index.html msda] \n 
-Efficient procedures for computing a new multi-class sparse discriminant analysis method that estimates all discriminant directions simultaneously. 
+- [http://cran.r-project.org/web/packages/msda/index.html msda]~~~~[https://cran.r-project.org/web/packages/msda/msda.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[Paper\]] \n
+Efficient procedures for computing a new multi-class sparse discriminant analysis method that estimates all discriminant directions simultaneously.\n
 
 *Tweedie Models* (Insurance Pricing)
  
-- [http://cran.r-project.org/web/packages/HDtweedie HDtweedie] \n
-The lasso for the Tweedie’s compound poisson model using an IRLS-BMD algorithm.
+- [http://cran.r-project.org/web/packages/HDtweedie HDtweedie]~~~~[https://cran.r-project.org/web/packages/HDtweedie/HDtweedie.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[Paper\]]\n
+The lasso for the Tweedie’s compound poisson model using an IRLS-BMD algorithm.\n
 
  
-- [http://cran.r-project.org/web/packages/TDboost TDboost] \n 
-A Boosted Nonparametric Tweedie Model.
+- [http://cran.r-project.org/web/packages/TDboost TDboost]~~~~[https://cran.r-project.org/web/packages/TDboost/TDboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[Paper\]]\n
+A Boosted Tweedie Compound Poisson Model for Insurance Premium.\n
 
 *Expectile Regression* (Risk Management)
 
  
-- [http://cran.r-project.org/web/packages/erboost erboost] \n 
-Nonparametric multiple expectile regression via ER-Boost.
+- [http://cran.r-project.org/web/packages/erboost erboost]~~~~[https://cran.r-project.org/web/packages/erboost/erboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[Paper\]]\n
+Nonparametric multiple expectile regression via ER-Boost.\n
 
  
-- [http://cran.r-project.org/web/packages/KERE KERE] \n 
-Expectile Regression in Reproducing Kernel Hilbert Space.
+- [http://cran.r-project.org/web/packages/KERE KERE]~~~~[https://cran.r-project.org/web/packages/KERE/KERE.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[Paper\]]\n
+Expectile Regression in Reproducing Kernel Hilbert Space.\n
 
 
-*Envelop Models*
-- [http://code.google.com/p/envlp envlp] \n
-A MATLAB toolbox for computing envelope estimators in multivariate linear regression.
+*Envelop Models* (Multivariate Regression)
+- [http://code.google.com/p/envlp envlp]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/Usersguide.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JSS_envlp.pdf \[Paper\]]\n
+A MATLAB toolbox for computing envelope estimators in multivariate linear regression.\n
 
