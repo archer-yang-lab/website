@@ -33,7 +33,7 @@ The lasso for the Tweedie’s compound poisson model using an IRLS-BMD algorithm
 
  
 - [http://cran.r-project.org/web/packages/TDboost TDboost]~~~~[https://cran.r-project.org/web/packages/TDboost/TDboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[Paper\]]\n
-A Boosted Tweedie Compound Poisson Model for Insurance Premium.\n
+A boosted Tweedie compound Poisson model for insurance premium.\n
 
 *Expectile Regression* (Risk Management)
 
@@ -43,7 +43,7 @@ Nonparametric multiple expectile regression via ER-Boost.\n
 
  
 - [http://cran.r-project.org/web/packages/KERE KERE]~~~~[https://cran.r-project.org/web/packages/KERE/KERE.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[Paper\]]\n
-Expectile Regression in Reproducing Kernel Hilbert Space.\n
+Expectile regression in reproducing kernel hilbert space.\n
 
 
 *Envelop Models* (Multivariate Regression)
