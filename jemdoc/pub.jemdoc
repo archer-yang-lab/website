@@ -9,42 +9,42 @@ including actuarial science and business statistics.
 
 = Publications
 
-- Su, Z., Zhu, G., Chen, X. and Yang, Y. (2016) \n
+- Su, Z., Zhu, G., Chen, X. and Yang, Y. (2016+) \n
 Sparse Envelope Model: Efficient Estimation and Response Variable Selection in Multivariate Linear Regression \n
 Preprint.
 
-- 	Yang, Y., Zhang, T. and Zou. H. (2015)\n 
-[http://arxiv.org/abs/1508.05987 Flexible Expectile Regression in Reproducing Kernel Hilbert Space] 
+- 	Yang, Y., Zhang, T. and Zou. H. (2016+)\n 
+[http://arxiv.org/abs/1508.05987 _Flexible Expectile Regression in Reproducing Kernel Hilbert Space_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/KERE.txt \[bib\]] \n 
 Preprint.
 
-- 	Mai, Q., Yang, Y. and Zou, H. (2015)\n 
-[http://arxiv.org/abs/1504.05845 Multiclass Sparse Discriminant Analysis] 
+- 	Mai, Q., Yang, Y. and Zou, H. (2016+)\n 
+[http://arxiv.org/abs/1504.05845 _Multiclass Sparse Discriminant Analysis_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/msda.txt \[bib\]] \n
 Preprint. 
 
-- 	Yang, Y., Qian, W. and Zou, H. (2015)\n 
-[http://arxiv.org/abs/1508.06378 A Boosted Tweedie Compound Poisson Model for Insurance Premium] 
+- 	Yang, Y., Qian, W. and Zou, H. (2016+)\n 
+[http://arxiv.org/abs/1508.06378 _A Boosted Tweedie Compound Poisson Model for Insurance Premium_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/TDboost.txt \[bib\]] \n 
 Preprint.
 
 - 	Yang, Y. and Zou, H. (2015)\n 
-[http://www.tandfonline.com/doi/abs/10.1080/00949655.2013.876024 Nonparametric Multiple Expectile Regression via ER-Boost] 
+[http://www.tandfonline.com/doi/abs/10.1080/00949655.2013.876024 _Nonparametric Multiple Expectile Regression via ER-Boost_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JSCS_erboost.txt \[bib\]] \n 
 Journal of Statistical Computation and Simulation. 85(7), 1442--1458. 
 
 - 	Cook, D., Su, Z. and Yang, Y. (2015)\n 
-[http://www.jstatsoft.org/v62/i08/ A MATLAB Toolbox for Computing Envelope Estimators in Multivariate Linear Regression] 
+[http://www.jstatsoft.org/v62/i08/ _A MATLAB Toolbox for Computing Envelope Estimators in Multivariate Linear Regression_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSS_envlp.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JSS_envlp.txt \[bib\]] \n
 Journal of Statistical Software. 62(8). 
 
 - 	Qian, W., Yang, Y. and Zou, H. (2015)\n 
-[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 Tweedie's Compound Poisson Model With Grouped Elastic Net] 
+[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 _Tweedie's Compound Poisson Model With Grouped Elastic Net_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JCGS_hdtweedie.txt \[bib\]]
 	[http://www.math.mcgill.ca/yyang/resources/papers/HDtweedie_appendix.pdf \[appendix\]] \n
@@ -52,41 +52,41 @@ Journal of Computational and Graphical Statistics. Accepted.
 
 
 - 	Yang, Y. and Zou, H. (2014)\n
-[http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems] 
+[http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 _A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/STCO_gglasso.txt \[bib\]] \n
 Statistics and Computing. 25(6), 1129--1141. 
 
 
 - 	Yang, Y. and Zou, H. (2014)\n 
-[http://dx.doi.org/10.1080/00949655.2012.695374 A Coordinate Majorization Descent Algorithm for l1 Penalized Learning] 
+[http://dx.doi.org/10.1080/00949655.2012.695374 _A Coordinate Majorization Descent Algorithm for l1 Penalized Learning_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_l1trick.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JSCS_mmtrick.txt \[bib\]] \n 
 Journal of Statistical Computation and Simulation. 84(1), 84--95.
 
 
 - 	Righi, M., Yang, Y. and Ceretta, P. (2014)\n 
-[http://www.emeraldinsight.com/doi/abs/10.1108/S1569-375920140000096003 Nonparametric Expectile Regression for Conditional Autoregressive Expected Shortfall Estimation] 
+[http://www.emeraldinsight.com/doi/abs/10.1108/S1569-375920140000096003 _Nonparametric Expectile Regression for Conditional Autoregressive Expected Shortfall Estimation_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/shortfall.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/shortfall.txt \[bib\]] \n
 Contemporary Studies in Economic and Financial Analysis. 96, 83--95. 
 
 
 - 	Yang, Y. and Zou, H. (2013)\n 
-[http://dx.doi.org/10.1080/10618600.2012.680324 An Efficient Algorithm for Computing The HHSVM and Its Generalizations] 
+[http://dx.doi.org/10.1080/10618600.2012.680324 _An Efficient Algorithm for Computing The HHSVM and Its Generalizations_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JCGS_hhsvm.txt \[bib\]] \n 
 Journal of Computational and Graphical Statistics. 22(2), 396--415.
 
 
 - 	Wang, S., Yang, Y., Chang, J. S., and Lin, F. P. (2013)\n 
-[http://thesai.org/Publications/ViewPaper?Volume=4&Issue=10&Code=IJACSA&SerialNo=6 Using Penalized Regression with Parallel Coordinates for Visualization of Significance in High Dimensional Data] 
+[http://thesai.org/Publications/ViewPaper?Volume=4&Issue=10&Code=IJACSA&SerialNo=6 _Using Penalized Regression with Parallel Coordinates for Visualization of Significance in High Dimensional Data_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/visualization.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/visualization.txt \[bib\]] \n
 International Journal of Advanced Computer Science and Applications. 4(10). 
 
 - 	Yang, Y. and Zou, H. (2012)\n 
-[http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions] 
+[http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 _A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions_] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/SII_fastcox.txt \[bib\]] \n
 Statistics and Its Interface. 6(2), 167-173.
