@@ -5,44 +5,44 @@
 *High-dimensional Statistical Inference*
 
  
-- [http://cran.r-project.org/web/packages/fastcox fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/fastcox fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
 Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. \n
 
 
  
-- [http://cran.r-project.org/web/packages/gcdnet gcdnet]~~~~[https://cran.r-project.org/web/packages/gcdnet/gcdnet.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[Paper\]] \n
+- [http://cran.r-project.org/web/packages/gcdnet gcdnet]~~~~[https://cran.r-project.org/web/packages/gcdnet/gcdnet.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gcdnet width="90px" align="center"/>}} \n
 Lasso and (adaptive) elastic-net penalized least squares, logistic regression, HHSVM and squared hinge loss SVM using a fast GCD algorithm. \n
 
 
  
-- [http://cran.r-project.org/web/packages/gglasso gglasso]~~~~[https://cran.r-project.org/web/packages/gglasso/gglasso.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/gglasso gglasso]~~~~[https://cran.r-project.org/web/packages/gglasso/gglasso.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gglasso width="90px" align="center"/>}}\n
 Group lasso penalized learning using a unified BMD algorithm. \n
 
  
-- [http://cran.r-project.org/web/packages/glmvsd/index.html glmvsd]~~~~[https://cran.r-project.org/web/packages/glmvsd/glmvsd.pdf \[Doc\]]~~~~[http://www.tandfonline.com/doi/abs/10.1080/10618600.2013.829780 \[Paper\]]\n 
+- [http://cran.r-project.org/web/packages/glmvsd/index.html glmvsd]~~~~[https://cran.r-project.org/web/packages/glmvsd/glmvsd.pdf \[Doc\]]~~~~[http://www.tandfonline.com/doi/abs/10.1080/10618600.2013.829780 \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/glmvsd width="90px" align="center"/>}}\n 
 Variable selection deviation measures and instability tests for high-dimensional generalized linear models. \n
 
  
-- [http://cran.r-project.org/web/packages/msda/index.html msda]~~~~[https://cran.r-project.org/web/packages/msda/msda.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[Paper\]] \n
+- [http://cran.r-project.org/web/packages/msda/index.html msda]~~~~[https://cran.r-project.org/web/packages/msda/msda.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[Paper\]] ~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/msda width="90px" align="center"/>}}\n
 Efficient procedures for computing a new multi-class sparse discriminant analysis method that estimates all discriminant directions simultaneously.\n
 
 *Tweedie Models* (Insurance Pricing)
  
-- [http://cran.r-project.org/web/packages/HDtweedie HDtweedie]~~~~[https://cran.r-project.org/web/packages/HDtweedie/HDtweedie.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/HDtweedie HDtweedie]~~~~[https://cran.r-project.org/web/packages/HDtweedie/HDtweedie.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/HDtweedie width="90px" align="center"/>}}\n
 The lasso for the Tweedie’s compound poisson model using an IRLS-BMD algorithm.\n
 
  
-- [http://cran.r-project.org/web/packages/TDboost TDboost]~~~~[https://cran.r-project.org/web/packages/TDboost/TDboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/TDboost TDboost]~~~~[https://cran.r-project.org/web/packages/TDboost/TDboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/TDboost width="90px" align="center"/>}}\n
 A boosted Tweedie compound Poisson model for insurance premium.\n
 
 *Expectile Regression* (Risk Management)
 
  
-- [http://cran.r-project.org/web/packages/erboost erboost]~~~~[https://cran.r-project.org/web/packages/erboost/erboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/erboost erboost]~~~~[https://cran.r-project.org/web/packages/erboost/erboost.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/erboost width="90px" align="center"/>}}\n
 Nonparametric multiple expectile regression via ER-Boost.\n
 
  
-- [http://cran.r-project.org/web/packages/KERE KERE]~~~~[https://cran.r-project.org/web/packages/KERE/KERE.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[Paper\]]\n
+- [http://cran.r-project.org/web/packages/KERE KERE]~~~~[https://cran.r-project.org/web/packages/KERE/KERE.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/KERE width="90px" align="center"/>}}\n
 Expectile regression in reproducing kernel hilbert space.\n
 
 
