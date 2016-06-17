@@ -1,9 +1,0 @@
-@article{righi2014nonparametric,
-  title={Nonparametric Expectile Regression for Conditional Autoregressive Expected Shortfall Estimation},
-  author={Righi, Marcelo Brutti and Yang, Yi and Ceretta, Paulo Sergio},
-  journal={Risk Management Post Financial Crisis: A Period of Monetary Easing},
-  volume={96},
-  pages={83--95},
-  year={2014},
-  publisher={Emerald Group Publishing Limited}
-}

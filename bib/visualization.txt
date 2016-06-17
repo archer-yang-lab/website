@@ -1,8 +1,0 @@
-@article{wang2013using,
-  title={Using Penalized Regression with Parallel Coordinates for Visualization of Significance in High Dimensional Data},
-  author={Wang, Shengwen and Yang, Yi and Chang, Jih-Sheng and Lin, Fang-Pang},
-  journal={International Journal of Advanced Computer Science and Applications (IJACSA)},
-  volume={4},
-  number={10},
-  year={2013}
-}
