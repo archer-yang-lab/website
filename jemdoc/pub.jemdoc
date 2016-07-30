@@ -9,9 +9,7 @@ including actuarial science and business statistics.
 
 = Publications
 
-- Su, Z., Zhu, G., Chen, X. and Yang, Y. (2016+) \n
-Sparse Envelope Model: Efficient Estimation and Response Variable Selection in Multivariate Linear Regression \n
-Preprint.
+
 
 - 	Mai, Q., Yang, Y. and Zou, H. (2016+)\n 
 [http://arxiv.org/abs/1504.05845 _Multiclass Sparse Discriminant Analysis_] \n
@@ -25,6 +23,12 @@ Preprint.
 	[http://www.math.mcgill.ca/yyang/resources/bib/KERE.bib \[bib\]] \n 
 Technometrics. Minor revision.
 
+- Su, Z., Zhu, G., Chen, X. and Yang, Y. (2016+) \n
+[http://www.math.mcgill.ca/yyang/resources/papers/BM_SparseEnv.pdf _Sparse Envelope Model: Efficient Estimation and Response Variable Selection in Multivariate Linear Regression_] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/BM_SparseEnv.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/bib/BM_SparseEnv.bib \[bib\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/BM_SparseEnv_supp.pdf \[appendix\]]\n 
+Biometrika. Accepted.
 
 - 	Yang, Y., Qian, W. and Zou, H. (2016+)\n 
 [http://arxiv.org/abs/1508.06378 _Insurance Premium Prediction via Gradient Tree-Boosted Tweedie Compound Poisson Models_] \n
