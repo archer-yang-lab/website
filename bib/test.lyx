@@ -100,7 +100,7 @@ tcolorbox
 \begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
-key "2015arXiv150805987Y,2016arXiv150405845M,CookSuYang2015JSS,QianYangZou2016JCGS,righi2014nonparametric,SuZhuChenYang2016BM,wang2013using,yang2012cocktail,yang2013efficient,yang2014coordinate,yang2015fast,yang2015nonparametric,YangQianZou2016JBES"
+key "righi2014nonparametric,SuZhuChenYang2016BM,wang2013using,yang2012cocktail,yang2013efficient,yang2014coordinate,yang2015fast,yang2015nonparametric,YangQianZou2016JBES,YangZhangZou2016,YeYangYang2016,CookSuYang2015JSS,MaiYangZou2016,QianYangZou2016JCGS"
 
 \end_inset
 
@@ -110,7 +110,7 @@ key "2015arXiv150805987Y,2016arXiv150405845M,CookSuYang2015JSS,QianYangZou2016JC
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "JBES_TDboost,JCGS_hhsvm,JSCS_erboost,JSCS_mmtrick,JSS_envlp,KERE,msda,shortfall,SII_fastcox,visualization,STCO_gglasso,JCGS_hdtweedie,BM_SparseEnv"
+bibfiles "JBES_TDboost,JCGS_hhsvm,JSCS_erboost,JSCS_mmtrick,JSS_envlp,KERE,msda,shortfall,SII_fastcox,visualization,STCO_gglasso,JCGS_hdtweedie,BM_SparseEnv,SOIL"
 options "asa"
 
 \end_inset
