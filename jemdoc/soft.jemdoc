@@ -57,7 +57,7 @@ Nonparametric multiple expectile regression via ER-Boost.\n
  
 - [http://cran.r-project.org/web/packages/KERE KERE]~~~~[https://cran.r-project.org/web/packages/KERE/KERE.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[Paper\]]\n
 #~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/KERE width="90px" align="center"/>}}\n
-Expectile regression in reproducing kernel hilbert space.\n
+Expectile regression in reproducing kernel Hilbert space.\n
 
 
 *Envelop Models* (Multivariate Regression)
