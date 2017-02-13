@@ -12,27 +12,32 @@ including actuarial science and business statistics.
 - 	Bhatnagar, S., Yang, Y., Khundrakpam, B., Evans, A., Blanchette, M., Bouchard, L., Greenwood, C. (2017+)\n 
 [http://biorxiv.org/content/early/2017/01/23/102475 _An Analytic Approach for Interpretable Predictive Models in High Dimensional Data_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/sahir_2017.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/sahir_2017.bib \[bib\]]
-	[http://www.math.mcgill.ca/yyang/resources/papers/sahir_2017_supp.pdf \[supplementary materials\]]\n
+	[http://www.math.mcgill.ca/yyang/resources/bib/shir_2017.bib \[bib\]]
+	[http://www.math.mcgill.ca/yyang/resources/papersa/sahir_2017_supp.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/eclust/index.html \[software\]]\n
 Preprint. 
 
 - 	Ye, C., Yang, Y. and Yang, Y. (2017+)\n 
 [http://arxiv.org/abs/1608.00629 _Sparsity Oriented Importance Learning for High-dimensional Linear Regression_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/SOIL.bib \[bib\]] 
-	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL_supplemental_materials.pdf \[supplementary materials\]]\n
+	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL_supplemental_materials.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/SOIL/index.html \[software\]]\n
 Preprint. 
 
 - 	Mai, Q., Yang, Y. and Zou, H. (2017+)\n 
 [http://arxiv.org/abs/1504.05845 _Multiclass Sparse Discriminant Analysis_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/msda.bib \[bib\]] \n
+	[http://www.math.mcgill.ca/yyang/resources/bib/msda.bib \[bib\]] 
+	[http://cran.r-project.org/web/packages/msda/index.html \[software\]] \n
 Statistica Sinica. Major revision.
 
 - 	Yang, Y., Zhang, T. and Zou. H. (2017+)\n 
-[http://arxiv.org/abs/1508.05987 _Flexible Expectile Regression in Reproducing Kernel Hilbert Space_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/kere-paper.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/KERE.bib \[bib\]] \n 
+[http://www.tandfonline.com/doi/full/10.1080/00401706.2017.1291450 _Flexible Expectile Regression in Reproducing Kernel Hilbert Space_] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/bib/KERE.bib \[bib\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE_supp.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/KERE/index.html \[software\]]\n 
 Technometrics. Accepted.
 
 
@@ -40,7 +45,8 @@ Technometrics. Accepted.
 [http://amstat.tandfonline.com/doi/abs/10.1080/07350015.2016.1200981 _Insurance Premium Prediction via Gradient Tree-Boosted Tweedie Compound Poisson Models_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JBES_TDboost.bib \[bib\]] 
-	[http://www.math.mcgill.ca/yyang/resources/papers/TDboost_appendix.pdf \[supplementary materials\]]\n 
+	[http://www.math.mcgill.ca/yyang/resources/papers/TDboost_appendix.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/TDboost/index.html \[software\]]\n 
 Journal of Business \& Economic Statistics. Accepted.
 
 
@@ -52,30 +58,34 @@ Journal of Business \& Economic Statistics. Accepted.
 Biometrika. 103(3), 579-593.
 
 - 	Qian, W., Yang, Y. and Zou, H. (2016)\n 
-[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 _Tweedie's Compound Poisson Model With Grouped Elastic Net_] \n
+[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 _Tweedie's Compound Poisson Model with Grouped Elastic Net_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/bib/JCGS_hdtweedie.bib \[bib\]]
-	[http://www.math.mcgill.ca/yyang/resources/papers/HDtweedie_appendix.pdf \[appendix\]] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/HDtweedie_appendix.pdf \[appendix\]] 
+	[http://cran.r-project.org/web/packages/HDtweedie/index.html \[software\]]\n
 Journal of Computational and Graphical Statistics. 25(2), 606-625.
 
 
 - 	Yang, Y. and Zou, H. (2015)\n 
 [http://www.tandfonline.com/doi/abs/10.1080/00949655.2013.876024 _Nonparametric Multiple Expectile Regression via ER-Boost_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/JSCS_erboost.bib \[bib\]] \n 
+	[http://www.math.mcgill.ca/yyang/resources/bib/JSCS_erboost.bib \[bib\]] 
+	[http://cran.r-project.org/web/packages/erboost/index.html \[software\]]\n 
 Journal of Statistical Computation and Simulation. 85(7), 1442--1458. 
 
 - 	Cook, D., Su, Z. and Yang, Y. (2015)\n 
 [http://www.jstatsoft.org/v62/i08/ _A MATLAB Toolbox for Computing Envelope Estimators in Multivariate Linear Regression_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSS_envlp.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/JSS_envlp.bib \[bib\]] \n
+	[http://www.math.mcgill.ca/yyang/resources/bib/JSS_envlp.bib \[bib\]] 
+	[https://github.com/emeryyi/envlp \[software\]]\n
 Journal of Statistical Software. 62(8). 
 
 
 - 	Yang, Y. and Zou, H. (2014)\n
 [http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 _A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/STCO_gglasso.bib \[bib\]] \n
+	[http://www.math.mcgill.ca/yyang/resources/bib/STCO_gglasso.bib \[bib\]] 
+	[http://cran.r-project.org/web/packages/gglasso/index.html \[software\]]\n 
 Statistics and Computing. 25(6), 1129--1141. 
 
 
@@ -96,7 +106,8 @@ Contemporary Studies in Economic and Financial Analysis. 96, 83--95.
 - 	Yang, Y. and Zou, H. (2013)\n 
 [http://dx.doi.org/10.1080/10618600.2012.680324 _An Efficient Algorithm for Computing The HHSVM and Its Generalizations_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/JCGS_hhsvm.bib \[bib\]] \n 
+	[http://www.math.mcgill.ca/yyang/resources/bib/JCGS_hhsvm.bib \[bib\]] 
+	[http://cran.r-project.org/web/packages/gcdnet/index.html \[software\]]\n  
 Journal of Computational and Graphical Statistics. 22(2), 396--415.
 
 
@@ -109,5 +120,6 @@ International Journal of Advanced Computer Science and Applications. 4(10).
 - 	Yang, Y. and Zou, H. (2012)\n 
 [http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 _A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/bib/SII_fastcox.bib \[bib\]] \n
+	[http://www.math.mcgill.ca/yyang/resources/bib/SII_fastcox.bib \[bib\]] 
+	[http://cran.r-project.org/web/packages/fastcox/index.html \[software\]] \n
 Statistics and Its Interface. 6(2), 167-173.
