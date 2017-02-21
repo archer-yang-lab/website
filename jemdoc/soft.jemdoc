@@ -5,6 +5,13 @@
 *High-dimensional Statistical Inference*
 
  
+
+ - [https://cran.r-project.org/web/packages/eclust/index.html eclust]~~~~[https://cran.r-project.org/web/packages/eclust/eclust.pdf \[Doc\]]~~~~[http://biorxiv.org/content/early/2017/01/23/102475 \[Paper\]]\n
+ #~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
+An algorithm for clustering high dimensional data that can be affected by an environmental factor. \n
+
+ 
+
 - [https://cran.r-project.org/web/packages/fastcox/index.html fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]\n
 #~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
 Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. \n
@@ -34,11 +41,6 @@ Multi-Class Sparse Discriminant Analysis. \n
 - [https://cran.r-project.org/web/packages/SOIL/index.html SOIL]~~~~[https://cran.r-project.org/web/packages/SOIL/SOIL.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SOIL.pdf \[Paper\]]\n
 #~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/SOIL width="90px" align="center"/>}}\n 
 Sparsity Oriented Importance Learning. \n
-
-
-- [https://cran.r-project.org/web/packages/eclust/index.html eclust]~~~~[https://cran.r-project.org/web/packages/eclust/eclust.pdf \[Doc\]]~~~~[http://biorxiv.org/content/early/2017/01/23/102475 \[Paper\]]\n
-#~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
-This package includes an algorithm for clustering high dimensional data that can be affected by an environmental factor. \n
 
 
 
