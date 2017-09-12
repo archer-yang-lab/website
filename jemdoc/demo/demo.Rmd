@@ -1,0 +1,345 @@
+---
+title: "Insurance Premium Prediction via Gradient
+Tree-Boosted Tweedie Compound Poisson Models"
+output:
+  html_document:
+    mathjax: default
+    theme: journal
+    toc: true
+    toc_float: true
+    highlight: pygments
+    code_folding: show
+---
+
+```{css}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(width=200)
+library(ggplot2)
+library(reshape2)
+library("TDboost")
+library(pander)
+panderOptions("digits", 2)
+library("lattice")
+library(cplm)
+data(AutoClaim)
+load("plotevn.rda")
+library(lattice)
+library(latticeExtra)
+library(TDboost)
+```
+
+# Abstract
+
+The Tweedie GLM is a widely used method for predicting insurance premiums. However, the structure of the logarithmic mean is restricted to a linear form in the Tweedie GLM, which can be too rigid for many applications. As a better alternative, we propose a gradient tree-boosting algorithm and apply it to Tweedie compound Poisson models for pure premiums. 
+
+As an application, we apply our method to an auto-insurance claim data and show that the new method is superior to the existing methods in the sense that it generates more accurate premium predictions, thus helping solve the adverse selection issue. We have implemented our method in a user-friendly R package that also includes a nice visualization tool for interpreting the fitted model.
+
+# Data
+
+One of the most important problems in insurance business is to set the premium for the customers (policyholders).  To appropriately set the premiums for the insurer’s customers, one crucial task is to predict the size of actual (currently unforeseeable) claims.
+
+An example of the data for the insurance premium prediction problems is shown below (only the first ten observations are shown here). The data set contains 10,296  driver
+vehicle records, each record including an individual driver's total
+claim amount $(z_{i})$ in the last five years $(w_{i}=5)$ and 17
+characteristics $x_{i}=(x_{i,1},\ldots,x_{i,17})$ for the driver
+and the insured vehicle. We want to predict the expected pure premium
+based on  $x_{i}$. 
+
+```{r, echo=TRUE}
+out <- AutoClaim[1:10,]
+pander(out)
+#knitr::kable(AutoClaim[1:10,], caption = "Data from Yip and Yau 2005", format = 'markdown')
+```
+
+One difficulty in modeling the claims (**CLM_AMT5**) is that the distribution is usually highly right-skewed, mixed with a point mass at zero. Such type of data cannot be transformed to normality by power transformation, and special treatment on zero claims is often required.  The histogram of the total claim amounts below
+shows that the empirical distribution of these values is highly skewed.
+We find that approximately $61.1\%$ of policyholders had no claims,
+and approximately $29.6\%$ of the policyholders had a positive claim
+amount up to 10,000 dollars. 
+
+```{r hist, echo=TRUE}
+da <- AutoClaim # use data in the Yip and Yau paper
+da <- transform(da, CLM_AMT5 = CLM_AMT5/5000,	INCOME = INCOME/10000)
+hist(da$CLM_AMT5, col ="grey", breaks = 50, main  = "Total Insurance Claim Amount (in 1000 dollar) Per Policy Year",cex.lab=1.3,cex.axis=1.3, ylim = c(0,7500),xlab="Claim Amount")
+```
+ 
+# Model
+
+In this article, we aim to model the insurance claim size by a nonparametric Tweedie compound Poisson model and propose a gradient tree-boosting algorithm (**TDboost** henceforth) to fit this model. We also implemented the proposed method as an easy-to-use R package, which is publicly available.
+
+We estimate the following model
+$$F^{*}(\mathbf{x})=\underset{F\in\mathcal{F}}{\arg\!\min}\,\big\{-\ell(F(\cdot),\phi,\rho|\{y_{i},\mathbf{x}_{i},w_{i}\}_{i=1}^{n})\big\}=\underset{F\in\mathcal{F}}{\arg\!\min}\sum_{i=1}^{n}\Psi(y_{i},F(\mathbf{x}_{i})|\rho), $$
+where
+$$\Psi(y_{i},F(\mathbf{x}_{i})|\rho)=w_{i}\Bigg\{-\frac{y_{i}\exp[(1-\rho)F(\mathbf{x}_{i})]}{1-\rho}+\frac{\exp[(2-\rho)F(\mathbf{x}_{i})]}{2-\rho}\Bigg\}.$$
+
+# Algorithm
+
+We estimate the predictor function $F(\cdot)$ by integrating the boosted Tweedie model into the tree-based gradient boosting algorithm, and apply the forward stagewise algorithm described in the following table for solving the model,
+
+******
+1. Initialize $\hat{F}^{[0]}$
+$$\hat{F}^{[0]}=\log\Bigg(\frac{\sum_{i=1}^{n}w_{i}y_{i}}{\sum_{i=1}^{n}w_{i}}\Bigg).$$
+2. For $m=1,\ldots,M$ repeatedly do steps 2.(a)--2.(d)
+    + 2.(a) Compute the negative gradient $(u_{1}^{[m]},\ldots,u_{n}^{[m]})^{T}$
+$$u_{i}^{[m]}=w_{i}\big\{-y_{i}\exp[(1-\rho)\hat{F}^{[m-1]}(\mathbf{x}_{i})]+\exp[(2-\rho)\hat{F}^{[m-1]}(\mathbf{x}_{i})]\big\}\qquad i=1,\ldots,n.$$
+    + 2.(b) Fit the negative gradient vector $(u_{1}^{[m]},\ldots,u_{n}^{[m]})^{T}$
+to $(\mathbf{x}_{1},\ldots,\mathbf{x}_{n})^{T}$ by an $L$-terminal node
+regression tree, where $\mathbf{x}_{i}=(x_{i1},\ldots, x_{ip})^{T}$ for $i=1,\ldots,n$, giving us the partitions $\{\widehat{R}_{l}^{[m]}\}_{l=1}^{L}$.
+    + 2.(c) Compute the optimal terminal node predictions $\eta_{l}^{[m]}$
+for each region $\widehat{R}_{l}^{[m]}$, $l=1,2,\ldots,L$
+$$\hat{\eta}_{l}^{[m]}=\log\Bigg\{\frac{\sum_{i:\mathbf{x}_{i}\in\widehat{R}_{l}^{[m]}}w_{i}y_{i}\exp[(1-\rho)\hat{F}^{[m-1]}(\mathbf{x}_{i})]}{\sum_{i:\mathbf{x}_{i}\in\widehat{R}_{l}^{[m]}}w_{i}\exp[(2-\rho)\hat{F}^{[m-1]}(\mathbf{x}_{i})]}\Bigg\}.$$
+    + 2.(d) Update $\hat{F}^{[m]}(\mathbf{x})$ for each region $\widehat{R}_{l}^{[m]}$,
+$l=1,2,\ldots,L$.
+$$\hat{F}^{[m]}(\mathbf{x})=\hat{F}^{[m-1]}(\mathbf{x})+\nu\hat{\eta}_{l}^{[m]}I(\mathbf{x}\in\widehat{R}_{l}^{[m]})\qquad l=1,2,\ldots,L.$$
+3. Report $\hat{F}^{[M]}(\mathbf{x})$ as the final estimate.
+
+
+
+# Simulation
+
+In this simulation study, we demonstrate that **TDboost** is well suited to fit target functions that are non-linear or involve complex interactions. We consider the true target function with two hills and two valleys:
+$$F(x_1,x_2)=e^{-5(1-x_1)^2+x_2^2}+e^{-5x_1^2+(1-x_2)^2},$$
+which corresponds to a common scenario where the effect of one variable changes depending on the effect of another. We assume $x_1,x_2\sim \mathrm{Unif}(0,1)$, and $y\sim\mathrm{Tw}(\mu,\phi,\rho)$ with $\rho=1.5$ and $\phi=0.5$. We generate $n=1000$ observations for training and $n^{\prime}=1000$ for testing, and fit the training data using **TDboost**, **MGCV**, and **TGLM**.  The fitted functions from this model are plotted below. We find that **TDboost** outperforms **TGLM** and **MGCV** in terms of the ability to recover the true functions and gives the smallest prediction errors.
+
+
+```{r plot, echo=TRUE}
+h2 = function(x) {
+	exp( -5 * (1-x[,1])^2 + (x[,2])^2 ) + exp( -5 * (x[,1])^2 + (1-x[,2])^2 )
+}
+
+T1 = seq(0,1,0.03)
+T2 = seq(0,1,0.03)
+X = data.frame(expand.grid(T1,T2))
+colnames(X) <- c("X1","X2")
+hx = h2(X)
+wireframe(hx~X1+X2,scales=list(arrows=F,col=1), data = X,shade=TRUE,
+par.settings = list(axis.line = list(col = "transparent")),
+xlab = "x1",
+ylab = "x2",
+zlab = "F(s1,x2)", cex.lab=1.2, 
+main="(a) True")
+
+## TDboost plot
+wireframe(pred_f2~V1+V2,
+data=test_dat, scales=list(arrows=F,col=1), 
+par.settings = list(axis.line = list(col = "transparent")),
+xlab = "x1",
+ylab = "x2",
+zlab = "F(x1,x2)",
+cex.lab=1.2, 
+main="(b) TDboost", shade=TRUE
+)
+
+## GLM plot
+wireframe(pred_f3~V1+V2,
+data=test_dat, scales=list(arrows=F,col=1), 
+par.settings = list(axis.line = list(col = "transparent")),
+xlab = "x1",
+ylab = "x2",
+zlab = "F(x1,x2)",
+cex.lab=1.2, 
+main="(c) TGLM", shade=TRUE
+)
+
+## MGCV plot
+wireframe(pred_f1~V1+V2,
+data=test_dat, scales=list(arrows=F,col=1), 
+par.settings = list(axis.line = list(col = "transparent")),
+xlab = "x1",
+ylab = "x2",
+cex.lab=1.2, 
+zlab = "F(x1,x2)",
+main="(d) MGCV", shade=TRUE,
+light.source = c(-10,0,10)
+)
+```
+
+# Results
+To examine the performance of **TGLM**, **MGCV** and **TDboost**, after fitting
+on the training set, we predict the pure premium $P(\mathbf{x})=\hat{\mu}(\mathbf{x})$
+by applying each model on the independent held-out testing set. 
+
+## Performance comparison
+Following _Frees et al. (2014)_, we successively specify the
+prediction from each model as the base premium $B(\mathbf{x})$ and
+use predictions from the remaining models as the competing premium
+$P(\mathbf{x})$ to compute the Gini indices. The figure below shows that when **TGLM** (or **MGCV**) is selected as the base premium, the area between the line of equality and the ordered Lorenz curve is larger when choosing **TDboost** as the competing premium, indicating again that the **TDboost** model represents the most favorable choice.
+
+```{r gini, echo=FALSE}
+load("gini1.rda")
+i = 1
+da <- data.frame(Loss = loss[,i], TGLM = pred_f1[,i], MGCV = pred_f2[,i], TDBoost = pred_f3[,i])
+gg <- gini(loss = "Loss", score  = c("TGLM","MGCV","TDBoost"), base=NULL, data = da)
+
+
+
+lrz <- lapply(gg@lorenz, as.data.frame)
+pd <- lapply(1:length(lrz), function(t){
+        lrz[[t]]$Base <- rep(names(lrz)[t], nrow(lrz[[t]]))
+        melt(lrz[[t]], c("Base", ".P.")) 
+        })
+pd <- do.call("rbind", pd)
+names(pd) <- c("Base", "Premium", "Model", "Loss")
+pd$Model <- factor(pd$Model, levels = eval(gg@call$score))
+
+pd <- pd[-(201:300),]
+```
+
+```{r gini1, echo=TRUE}
+pp <- ggplot(pd, aes(Premium, Loss))
+pp <- pp + geom_line(aes(linetype = Model)) + 
+       geom_line(aes(Premium, Premium, linetype = Base))
+pp <- pp + facet_wrap('Base') 
+none <- element_blank()
+pp <- pp + theme(panel.background = element_rect(fill='white', colour='black'),
+legend.key = none)
+print(pp)
+```
+
+
+## Variable importance
+
+There are several explanatory variables significantly related to the pure premium. The Variable Importance (VI) measure and the baseline value of each explanatory variable are shown in Figure 8. We find that REVOKED, MVR PTS, AREA and BLUEBOOK have high VI measure scores (the vertical line), and their scores all surpass the corresponding baselines (the horizontal line-length), indicating that the impor- tance of those explanatory variables is real. We also find the variables AGE, JOBCLASS, CAR TYPE, NPOLICY, MAX EDUC, MARRIED, KIDSDRIV and CAR USE have larger-than-baseline VI measure scores, but the absolute scales are much less than aforementioned four variables. On the other hand, although the VI measure of, e.g., TRAVTIME is quite large, it does not significantly surpass the baseline importance.
+
+```{r inf, echo=FALSE}
+load("inf.rda")
+p <- ncol(fdat)/2
+n <- nrow(fdat)
+
+orig  <-  apply(fdat[,1:p], 2, mean)
+baseline  <-  apply(fdat[,(p+1):(2*p)], 2, mean)
+
+rate <- 100/sum(orig)
+orig <- orig*rate
+baseline <- baseline*rate
+
+out1 = data.frame(var=coln,rel.inf=orig)
+out1$baseline <- baseline
+out1$w <- rep(1,16)
+```
+
+```{r inf1, echo=TRUE}
+ltheme <- canonical.theme(color = FALSE) ## in-built B&W theme 
+ltheme$strip.background$col <- "transparent" ## change strip bg 
+lattice.options(default.theme = ltheme) ## set as default
+my.key = list(space="top", border=TRUE, padding.text=7, columns = 2,
+# points=list(pch = list(16,2),col=c(4,1),cex = c(1,1)), 
+lines = list(pch=c("l",NA), type=c("p","l"), col=c(1,1), lty = c(NA, 1), lwd = c(1,4) ), 
+text=list(c("Relative Influence","Baseline")), cex = 1)
+panelfun = function(x,y,subscripts,...){
+panel.dotplot(x, y, pch="l", cex=1, col = 1)
+panel.segments(0, as.numeric(y), out1$baseline[subscripts], as.numeric(y), lty=1, col = 1, lwd=4)
+}
+pl <- dotplot(reorder(var,rel.inf) ~ rel.inf, groups = w, data = out1, 
+layout = c(1,1), key = my.key, 
+xlab = "Fraction of Reduction in Sum of Squared Error in Gradient Prediction", 
+panel = panel.superpose, 
+panel.groups = panelfun
+)
+print(pl)
+```
+
+
+
+
+```{r partial, echo=FALSE}
+load("partial_image.rda")
+tmptmp <-NULL
+for(r in c(9,4)){
+	tmp <- plot.TDboost(m3,r,best.iter,return.grid=TRUE)
+	tmptmp <- rbind(tmptmp ,as.matrix(tmp))
+}
+
+var = rep(c("MVR_PTS","BLUEBOOK"),each = 100)
+mat <- data.frame(var)
+mat[,"x"] <- as.numeric(tmptmp[,1])
+mat[,"y"] <- exp(as.numeric(tmptmp[,2]))
+mat[,"var"] <- var
+
+t1 <- plot.TDboost(m3,8,best.iter,return.grid=TRUE)
+t2 <- plot.TDboost(m3,16,best.iter,return.grid=TRUE)
+out1 <- data.frame(REVOKED=c("No","Yes"))
+out1[,"y"]  <- c(exp(t1$y[1]),exp(t1$y[100]))
+
+out2 <- data.frame(AREA= c("Rural","Urban"))
+out2[,"y"]  <- c(exp(-0.2910645), exp(1.1311282))
+
+ltheme <- canonical.theme(color = FALSE) ## in-built B&W theme 
+ltheme$strip.background$col <- "transparent" ## change strip bg 
+lattice.options(default.theme = ltheme) ## set as default
+```
+
+## Partial dependence
+We now use the partial dependence plots to visualize the fitted model. The plot below shows the main effects of four important explanatory variables on the pure premium. We clearly see that the strong nonlinear effects exist in predictors BLUEBOOK and MVR PTS: for the policyholders whose vehicle values are below 40K, their pure premium is negatively as- sociated with the value of vehicle; after the value of vehicle passes 40K, the pure premium curve reaches a plateau; Additionally, the pure premium is positively associated with motor vehicle record points MVR PTS, but the pure premium curve reaches a plateau when MVR PTS exceeds six. On the other hand, the partial dependence plots suggest that a policyholder who lives in the urban area (AREA="URBAN") or with driver’s license revoked (REVOKED="YES") typically has relatively high pure premium.
+
+```{r plot1, echo=TRUE}
+pl <- xyplot(y ~ x | var, data = mat,
+	type = "l",
+	ylab = "Pure Premium (in $1000)",
+	xlab = "$x$",
+	lty=1:3,
+	scale ="free",
+	lwd=1.5)
+
+pl1 = barchart(y ~ REVOKED, data = out1, 
+	beside = TRUE, strip=strip.custom(factor.levels="a"),
+	col = grey(c(0.5,1)))
+
+pl2 = barchart(y ~ AREA, data = out2, 
+	beside = TRUE, strip=strip.custom(factor.levels="a"),
+	col = grey(c(0.5,1)))
+
+print(c(pl,REVOKED = pl1,AREA=pl2,merge.legends=TRUE))
+```
+
+## Higher order interactions
+In the plot below, we visualize the effects of four important second order interactions using the joint partial dependence plots. These four interactions are AREA × MVR PTS, AREA × NPOLICY, AREA × REVOKED and AREA × TRAVTIME. These four interactions all involve the variable AREA: we can see that the marginal effects of MVR PTS, NPOLICY, REVOKED and TRAVTIME on the pure premium are greater for the policyholders living in the urban area (AREA="URBAN") than those living in the rural area (AREA="RURAL"). For example, a strong AREA × MVR PTS interaction suggests that for the policyholders living in the rural area, motor vehicle record points of the policyholders have a weaker positive marginal effect on the expected pure premium than for the policyholders living in the urban area.
+
+
+```{r inter, echo=TRUE}
+load("partial_image1.rda")
+
+wireframe(marginal.effect~AREA+MVR_PTS,
+scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban'))),
+data=tmp1,screen = list(z = 30, x = -60), main="(a)",
+zlab="mu(x)",ylab="MVR_PTS",
+par.settings = list(axis.line = list(col = "transparent")),
+lwd=0.6
+)
+
+wireframe(marginal.effect~AREA+NPOLICY,
+data=tmp2,screen = list(z = 120, x = -60), main="(b)",
+scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban'))),
+zlab="mu(x)",
+par.settings = list(axis.line = list(col = "transparent")),
+lwd=0.6
+)
+
+wireframe(marginal.effect~AREA+REVOKED,
+data=tmp3,screen = list(z = 30, x = -60), main="(c)",
+scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban')),
+y = list(at = c(1.25, 1.75), lab = c('No', 'Yes'))
+),
+zlab="mu(x)",
+par.settings = list(axis.line = list(col = "transparent")),
+lwd=0.6
+)
+
+wireframe(marginal.effect~AREA+TRAVTIME,
+data=tmp4,screen = list(z = 120, x = -60), main="(d)",
+scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban'))),
+zlab="mu(x)",
+par.settings = list(axis.line = list(col = "transparent")),
+lwd=0.6
+)
+
+```

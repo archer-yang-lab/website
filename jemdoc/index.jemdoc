@@ -1,13 +1,16 @@
 # jemdoc: menu{MENU}{index.html},nofooter,addcss{custom.css},analytics{UA-7506982-8}
-= Yi Yang\n
-McGill University
+
+~~~
+{}{img_left}{yi_portrait.jpg}{Portrait of Yi Yang}{300px}{}{}
+=  Yi Yang \n
 
 Assistant Professor of Statistics
 
-Department of Mathematics and Statistics
+[http://www.mcgill.ca/mathstat/home-page Department of Mathematics and Statistics]
 
-McGill University
- 
+[http://www.mcgill.ca/ McGill University]
+~~~
+
 == Contact
 Burnside Hall, Room 1240\n
 805 Sherbrooke Street West\n
@@ -15,5 +18,15 @@ Montreal, QC H3A 0B9, Canada\n
 Email: [yi.yang6@mcgill.ca]\n
 [http://www.math.mcgill.ca/yyang]
 
-== Office Hour
-MATH 203 (2016 Winter) 10:40am--11:40am Mon\/Wed 
+== Research Interest
+
+I am interested in machine learning, computational statistics, 
+high-dimensional statistical inference,\n
+nonparametric classification and regression, 
+as well as applications of these techniques in various fields,\n 
+including actuarial science and business statistics.
+
+
+== Research Opportunities 
+I am currently accepting applications for new graduate students. I also have opportunities for undergraduate students to assist with various research projects. Please contact me to learn about specific research and training opportunities.
+ 

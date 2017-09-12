@@ -12,20 +12,17 @@ An algorithm for clustering high dimensional data that can be affected by an env
 
  
 
-- [https://cran.r-project.org/web/packages/fastcox/index.html fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]\n
-#~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
+- [https://cran.r-project.org/web/packages/fastcox/index.html fastcox]~~~~[https://cran.r-project.org/web/packages/fastcox/fastcox.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/fastcox width="90px" align="center"/>}}\n
 Lasso and elastic-net penalized Cox's regression in high dimensions models using the cocktail algorithm. \n
 
 
  
-- [https://cran.r-project.org/web/packages/gcdnet/index.html gcdnet]~~~~[https://cran.r-project.org/web/packages/gcdnet/gcdnet.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[Paper\]]\n
-#~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gcdnet width="90px" align="center"/>}} \n
+- [https://cran.r-project.org/web/packages/gcdnet/index.html gcdnet]~~~~[https://cran.r-project.org/web/packages/gcdnet/gcdnet.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gcdnet width="90px" align="center"/>}} \n
 Lasso and (adaptive) elastic-net penalized least squares, logistic regression, HHSVM and squared hinge loss SVM using a fast GCD algorithm. \n
 
 
  
-- [https://cran.r-project.org/web/packages/gglasso/index.html gglasso]~~~~[https://cran.r-project.org/web/packages/gglasso/gglasso.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[Paper\]]\n
-#~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gglasso width="90px" align="center"/>}}\n
+- [https://cran.r-project.org/web/packages/gglasso/index.html gglasso]~~~~[https://cran.r-project.org/web/packages/gglasso/gglasso.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/gglasso width="90px" align="center"/>}}\n
 Group lasso penalized learning using a unified BMD algorithm. \n
 
  
@@ -46,8 +43,7 @@ Sparsity Oriented Importance Learning. \n
 
 *Tweedie Models* (Insurance Pricing)
  
-- [https://cran.r-project.org/web/packages/HDtweedie/index.html HDtweedie]~~~~[https://cran.r-project.org/web/packages/HDtweedie/HDtweedie.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[Paper\]]\n
-#~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/HDtweedie width="90px" align="center"/>}}\n
+- [https://cran.r-project.org/web/packages/HDtweedie/index.html HDtweedie]~~~~[https://cran.r-project.org/web/packages/HDtweedie/HDtweedie.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[Paper\]]~~~~{{<img src=http://cranlogs.r-pkg.org/badges/grand-total/HDtweedie width="90px" align="center"/>}}\n
 The lasso for the Tweedie's compound poisson model using an IRLS-BMD algorithm.\n
 
  
@@ -68,7 +64,7 @@ Nonparametric multiple expectile regression via ER-Boost.\n
 Expectile regression in reproducing kernel Hilbert space.\n
 
 
-*Envelop Models* (Multivariate Regression)
+*Envelope Models* (Multivariate Regression)
 - [https://github.com/emeryyi/envlp envlp]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/Usersguide.pdf \[Doc\]]~~~~[http://www.math.mcgill.ca/yyang/resources/papers/JSS_envlp.pdf \[Paper\]]\n
 A MATLAB toolbox for computing envelope estimators in multivariate linear regression.\n
 
