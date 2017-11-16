@@ -4,35 +4,84 @@
 === Fall 2017
 
 ~~~
-[http://www.math.mcgill.ca/yyang/resources/teaching/2017/math423/Math533-Outline-2017.pdf _Syllabus_]
+[http://www.math.mcgill.ca/yyang/regression/Math533-Outline-2017.pdf _Syllabus_]
 ~~~
 
 ~~~
 == Handouts
 
-- [http://www.math.mcgill.ca/yyang/resources/teaching/2017/math423/handouts/Background-Part1.pdf _Required Background_]
-- [http://www.math.mcgill.ca/yyang/resources/teaching/2017/math423/handouts/Background-Part1.pdf _More Required Background_]
+- [http://www.math.mcgill.ca/yyang/regression/handouts/Background-Part1.pdf _Required Background_] 
+- [http://www.math.mcgill.ca/yyang/regression/handouts/Background-Part2.pdf _More Required Background_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-01-Linear-Algebra-in-R.pdf _Linear Algebra in R_] [http://www.math.mcgill.ca/yyang/regression/handouts/01-LinearAlgebra.R _(R code)_] 
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-02-lm.pdf _The lm function_] [http://www.math.mcgill.ca/yyang/regression/handouts/02-lm.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-03-Residuals.pdf _Residuals_] [http://www.math.mcgill.ca/yyang/regression/handouts/03-Residuals.R _(R code)_]  [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-03-ResidualPatterns.pdf _Residuals Plots_] [http://www.math.mcgill.ca/yyang/regression/handouts/03-ResidualPlots-Patterns.R _(R code)_] 
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-04-Estimation.pdf _Estimation_] [http://www.math.mcgill.ca/yyang/regression/handouts/04-Estimation.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-05-SumSquares.pdf _Sums of Squares_] [http://www.math.mcgill.ca/yyang/regression/handouts/05-SumSquares.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-06-ANOVA.pdf _ANOVA_] [http://www.math.mcgill.ca/yyang/regression/handouts/06-ANOVA.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-09-MultipleRegression.pdf _Multiple Regression I_] [http://www.math.mcgill.ca/yyang/regression/handouts/09-MultipleRegression1.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-10-MultipleRegressioninR.pdf _Multiple Regression II_] [http://www.math.mcgill.ca/yyang/regression/handouts/10-MultipleRegression2.R _(R code)_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-11-MultipleRegressioninR2.pdf _Multiple Regression III_] [http://www.math.mcgill.ca/yyang/regression/handouts/11-MultipleRegression3.R _(R code)_]
 
 ~~~
 
 ~~~
-== R tutorial
+== Notes
+- [http://www.math.mcgill.ca/yyang/regression/notes/Note1.pdf _Note 1_]
+- [http://www.math.mcgill.ca/yyang/regression/notes/Note2.pdf _Note 2_]
+- [http://www.math.mcgill.ca/yyang/regression/notes/Note3.pdf _Note 3_]
 
 
 ~~~
+
+~~~
+== R Computation
+- [http://www.stat.cmu.edu/~cshalizi/rmarkdown/ _R Markdown Tutorial_]
+- [http://www.math.mcgill.ca/yyang/regression/RMarkdown/rmarkdown-cheatsheet.pdf _R Markdown Cheatsheet_]
+- [http://www.math.mcgill.ca/yyang/regression/RMarkdown/rmarkdown-reference.pdf _R Markdown Reference_]
+. [http://www.math.mcgill.ca/yyang/regression/RMarkdown/example.html _An R Markdown Example_] [http://www.math.mcgill.ca/yyang/regression/RMarkdown/example.Rmd _.Rmd file_]
+. [http://www.math.mcgill.ca/yyang/regression/RMarkdown/1-lm.pdf _Simple Linear Regression_] [http://www.math.mcgill.ca/yyang/regression/RMarkdown/1-lm.Rmd _.Rmd file_]
+. [http://www.math.mcgill.ca/yyang/regression/RMarkdown/2-Predict.pdf _Prediction_] [http://www.math.mcgill.ca/yyang/regression/RMarkdown/2-Predict.Rmd _.Rmd file_]
+. [http://www.math.mcgill.ca/yyang/regression/RMarkdown/2-Predict-sim.pdf _Prediction (Simulation)_] [http://www.math.mcgill.ca/yyang/regression/RMarkdown/2-Predict-sim.Rmd _.Rmd file_]
+
+~~~
+
 
 ~~~
 == Assignments
 
-- Assignment 1 Solutions 1
-- Assignment 2 Solutions 2
-- Assignment 3 Solutions 3
+- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment1.pdf _Assignment 1_] [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Sol1.pdf _Solutions 1_]
+	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/a1-1.txt _a1-1_] [http://www.math.mcgill.ca/yyang/regression/data/a1-2.txt _a1-2_] [http://www.math.mcgill.ca/yyang/regression/data/a1-3.txt _a1-3_]
+- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment2.pdf _Assignment 2_] [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Sol2.pdf _Solutions 2_]
+	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/salary.csv _salary_] [http://www.math.mcgill.ca/yyang/regression/data/US-GDP.txt _US-GDP_]
+- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment3.pdf _Assignment 3_] Solutions 3
+	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/cigs.csv _cigs_]
 - Assignment 4 Solutions 4
 
 ~~~
 
 ~~~
+== Exam Preparation 
+- [http://www.math.mcgill.ca/yyang/regression/exam/Math423-533-ExampleMidTerm-2017-AllQS.pdf _Sample Midterm_]
+- [http://www.math.mcgill.ca/yyang/regression/exam/MidTermTheory-2017.pdf _A Summary of The Theory So Far (midterm)_]
+
+~~~
+
+~~~
+== For MATH 533
+
+=== Slides
+- [http://www.math.mcgill.ca/yyang/regression/extra/Math423-533-Extra.pdf _Extra Hour Materials_]
+- [http://www.math.mcgill.ca/yyang/regression/extra/sparse_coding.ppt _Sparse Coding_]
+=== Notes
+- [http://www.math.mcgill.ca/yyang/regression/extra/Ridge_Bishop.pdf _Ridge Regression 1_]  [http://www.math.mcgill.ca/yyang/regression/extra/Ridge_ESL.pdf _Ridge Regression 2_]
+- [http://www.math.mcgill.ca/yyang/regression/extra/PCA_Bishop.pdf _PCA_] [http://www.math.mcgill.ca/yyang/regression/extra/PCA_Demo _Examples_]
+- [http://www.math.mcgill.ca/yyang/regression/extra/lasso.pdf _Lasso Regression_]
+=== Extra Reading (not required)
+- [http://www.math.mcgill.ca/yyang/regression/extra/Extra_Note.pdf _Least Squares and Matrix Computation_]
+- [http://www.math.mcgill.ca/yyang/regression/extra/Robust_linear_reg.pdf _Robust Linear Regression_]
+
+~~~
+
+~~~
 == Final Project
-
-
 ~~~

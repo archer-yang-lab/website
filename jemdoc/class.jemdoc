@@ -1,21 +1,26 @@
 # jemdoc: menu{MENU}{class.html},nofooter,addcss{custom.css},analytics{UA-7506982-8}
 = Teaching
 
-: {Fall 2015}
-MATH 680  Computation Intensive Statistics
 
-: {Winter 2016}
-MATH 203 Principles of Statistics 1
-
-: {Fall 2016}
-MATH 680  Computation Intensive Statistics
+: {Fall 2017}
+[http://www.math.mcgill.ca/yyang/regression.html _MATH 423/533 Regression and Analysis of Variance_]
 
 : {Winter 2017}
 MATH 203 Principles of Statistics 1\n
 MATH 783 Advanced Topics in Statistics 2
 
-: {Fall 2017}
-[http://www.math.mcgill.ca/yyang/regression.html _MATH 423/533 Regression and Analysis of Variance_]
+: {Fall 2016}
+MATH 680  Computation Intensive Statistics
+
+: {Winter 2016}
+MATH 203 Principles of Statistics 1
+
+
+: {Fall 2015}
+MATH 680  Computation Intensive Statistics
+
+
+
 
 
 : {[http://ism.uqam.ca/~ism/accueil/formation-courses/ _Courses provided by universities in Montreal_]}

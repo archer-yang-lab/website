@@ -19,18 +19,18 @@
 	[http://www.math.mcgill.ca/yyang/resources/papers/sahir_2017.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/papersa/sahir_2017_supp.pdf \[supplementary materials\]]
 	[http://cran.r-project.org/web/packages/eclust/index.html \[software\]]\n
-/Preprint./
+/Genetic Epidemiology./ Accepted.
 
 - 	Ye, C., Yang, Y. and Yang, Y. (2017+)\n 
-[http://arxiv.org/abs/1608.00629 _Sparsity Oriented Importance Learning for High-dimensional Linear Regression_] \n
+[http://dx.doi.org/10.1080/01621459.2017.1377080 _Sparsity Oriented Importance Learning for High-dimensional Linear Regression_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL_supplemental_materials.pdf \[supplementary materials\]]
 	[http://cran.r-project.org/web/packages/SOIL/index.html \[software\]]\n
 /Journal of the American Statistical Association./ Accepted.
 
 - 	Mai, Q., Yang, Y. and Zou, H. (2017+)\n 
-[http://arxiv.org/abs/1504.05845 _Multiclass Sparse Discriminant Analysis_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/msda-paper.pdf \[pdf\]] 
+[http://www.math.mcgill.ca/yyang/resources/papers/SS_msda.pdf _Multiclass Sparse Discriminant Analysis_] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/SS_msda.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/msda/index.html \[software\]] \n
 /Statistica Sinica./ Accepted.
 
@@ -77,9 +77,9 @@
 /Journal of Statistical Software./ 62(8). 
 
 
-- 	Yang, Y. and Zou, H. (2014)\n
+- 	Yang, Y. and Zou, H. (2015)\n
 [http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 _A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/gglasso.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/STCO_gglasso.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/gglasso/index.html \[software\]]\n 
 /Statistics and Computing./ 25(6), 1129-1141. 
 
@@ -108,7 +108,7 @@
 	[http://www.math.mcgill.ca/yyang/resources/papers/visualization.pdf \[pdf\]] \n
 /International Journal of Advanced Computer Science and Applications./ 4(10). 
 
-- 	Yang, Y. and Zou, H. (2012)\n 
+- 	Yang, Y. and Zou, H. (2013)\n 
 [http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 _A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions_] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/fastcox/index.html \[software\]] \n
