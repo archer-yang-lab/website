@@ -1,0 +1,17 @@
+language: python
+cache: packages
+
+env:
+  global:
+    - secure: "AAAAB3NzaC1yc2EAAAADAQABAAACAQDILggkzzD0pouTy3l0TVRxoX88SdCRKcxKd4WEVj7CBTxgPXAAH2RzBHS1kfSupSnsYmd1NHmhLJnWk0rvGStVWnfwrCemZ/f3Wy7gB7vdV/Bib0HLn+eYgMKtSXygcqp2Qswkdxc503d3bzyAm5XqYpP1DPkiM8AzuQpn7BE0krsEDAtLh7994CT1ony8VJYI4oneDw1sPuzR5JBNYKUhFUFJgfAVDa6ADnpH0g8ohVt1S5a250A0MHzIkpsUJ422VMEG3Yy6vOwDQKcdkJqBbXKjIpMFkKhf5ZHXtlYUSQGoazk9SWiSTcSFmrDcmZSWVE41x5IoFAekzIWijbgiBl7fsgvJYzhXG9v7oI0TXLC7b+q9J5PugElIAVv0/8VpA13+X2KdABeFT8ETAHaZ/OjX3yE106KUwW5kXAdr6j0NOMSVu8wxEsYgtNTskzbYKCuv5ZGxWw32B+n+VtrYZpfXwOQr56yTgAba4/u38j9we0DuZpyYqaDsD1YqQQDpBrSo0X9JMFB/6VTK9RK304OYiw2roekdWQ0X24R17k5NBrXan8fl2DfifEo+l0h2n1faKH7cRKtKXQuAsvky0UFd1ie6SmEwZc1+CS7ndZKMJKp+4IDwecUHOhDea/NehvaPH/f+dvdPR66p4W1NFU4XXSCP61TtQS+RBDMnWQ=="
+
+#before_install:
+#- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
+
+
+before_script:
+  - chmod +x ./jemdoc.py
+  - chmod +x ./_build.sh
+
+script:
+  - ./_build.sh
