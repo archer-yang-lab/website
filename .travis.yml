@@ -10,7 +10,7 @@ env:
 
 
 before_script:
-  - chmod +x ./jemdoc.py
+  - chmod +x ./jemdoc/jemdoc.py
   - chmod +x ./_build.sh
 
 script:
