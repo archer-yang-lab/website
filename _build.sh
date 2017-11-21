@@ -1,3 +1,3 @@
 #!/bin/sh
 
-jemdoc -c mysite.conf *.jemdoc
+./jemdoc -c mysite.conf *.jemdoc
