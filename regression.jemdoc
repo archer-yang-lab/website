@@ -21,7 +21,9 @@
 . [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-09-MultipleRegression.pdf _Multiple Regression I_] [http://www.math.mcgill.ca/yyang/regression/handouts/09-MultipleRegression1.R _(R code)_]
 . [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-10-MultipleRegressioninR.pdf _Multiple Regression II_] [http://www.math.mcgill.ca/yyang/regression/handouts/10-MultipleRegression2.R _(R code)_]
 . [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-11-MultipleRegressioninR2.pdf _Multiple Regression III_] [http://www.math.mcgill.ca/yyang/regression/handouts/11-MultipleRegression3.R _(R code)_]
-
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-13-TypesofPredictor.pdf _Types of Predictors_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-14-FactorsExample.pdf _Factor Model Examples_]
+. [http://www.math.mcgill.ca/yyang/regression/handouts/Math423-533-15-FactorModels-Parameters.pdf _Factor Model Parameterization_]
 ~~~
 
 ~~~
@@ -53,9 +55,12 @@
 	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/a1-1.txt _a1-1_] [http://www.math.mcgill.ca/yyang/regression/data/a1-2.txt _a1-2_] [http://www.math.mcgill.ca/yyang/regression/data/a1-3.txt _a1-3_]
 - [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment2.pdf _Assignment 2_] [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Sol2.pdf _Solutions 2_]
 	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/salary.csv _salary_] [http://www.math.mcgill.ca/yyang/regression/data/US-GDP.txt _US-GDP_]
-- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment3.pdf _Assignment 3_] Solutions 3
+- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment3.pdf _Assignment 3_] [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Sol3.pdf _Solutions 3_]
 	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/cigs.csv _cigs_]
-- Assignment 4 Solutions 4
+- [http://www.math.mcgill.ca/yyang/regression/assignments/Math423-533-2017-Assignment4.pdf _Assignment 4_] Solutions 4
+	-- Data: [http://www.math.mcgill.ca/yyang/regression/data/TestScores.csv _TestScores_]
+	[http://www.math.mcgill.ca/yyang/regression/data/Filter.csv _Filter_]
+	[http://www.math.mcgill.ca/yyang/regression/data/PatSat.csv _PatSat_]
 
 ~~~
 
