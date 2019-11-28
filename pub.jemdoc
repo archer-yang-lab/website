@@ -3,61 +3,81 @@
 
 === [https://scholar.google.fr/citations?user=6rmwWGkAAAAJ&hl=en Google Scholar]\n
 
-
-- 	Zhang, T. and Yang, Y. (2017+)\n 
-[http://www.math.mcgill.ca/yyang/resources/papers/RPCA.pdf _Robust Principal Component Analysis by Manifold Optimization_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/RPCA.pdf \[pdf\]]\n
+- 	Bhatnagar, Yang, Lu, Schurr, Loredo-Osti, Forest, Oualkacha and Greenwood (2019+)\n 
+[https://www.biorxiv.org/content/10.1101/408484v3 Simultaneous SNP Selection and Adjustment for Population Structure in High Dimensional Prediction Models] \n
+[https://www.biorxiv.org/content/10.1101/408484v3 \[pdf\]]\n
 /Preprint/
 
-- 	Yu, Y., Yang, Y. and Yang, Y. (2017+)\n 
-[http://www.math.mcgill.ca/yyang/resources/papers/PAVI.pdf _Performance Assessment of High-dimensional Variable Identification_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/PAVI.pdf \[pdf\]]\n
+- 	Bhatnagar, Yang, Lu, Lovato, O'Donnell and Greenwood (2019+)\n 
+[https://github.com/sahirbhatnagar/sahirbhatnagar.github.io/raw/master/assets/pdf/sail_manuscript_v2.pdf A Sparse Additive Model for High-Dimensional Interactions with an Exposure Variable] \n
+[https://github.com/sahirbhatnagar/sahirbhatnagar.github.io/raw/master/assets/pdf/sail_manuscript_v2.pdf \[pdf\]]\n
 /Preprint/
 
-- 	Bhatnagar, S., Yang, Y., Khundrakpam, B., Evans, A., Blanchette, M., Bouchard, L., Greenwood, C. (2017+)\n 
-[http://biorxiv.org/content/early/2017/01/23/102475 _An Analytic Approach for Interpretable Predictive Models in High Dimensional Data_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/sahir_2017.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/papersa/sahir_2017_supp.pdf \[supplementary materials\]]
-	[http://cran.r-project.org/web/packages/eclust/index.html \[software\]]\n
-/Genetic Epidemiology./ Accepted
+- 	Yu, Y., Yang, Y. and Yang, Y. (2019+)\n 
+[http://www.math.mcgill.ca/yyang/resources/papers/PAVI.pdf Performance Assessment of High-dimensional Variable Identification] \n
+[http://www.math.mcgill.ca/yyang/resources/papers/PAVI.pdf \[pdf\]]\n
+/Preprint/
 
-- 	Ye, C., Yang, Y. and Yang, Y. (2017+)\n 
-[http://dx.doi.org/10.1080/01621459.2017.1377080 _Sparsity Oriented Importance Learning for High-dimensional Linear Regression_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL_supplemental_materials.pdf \[supplementary materials\]]
-	[http://cran.r-project.org/web/packages/SOIL/index.html \[software\]]\n
-/Journal of the American Statistical Association./ Accepted
+-    Chen, T., Su, Z., Yang, Y. and Ding, S. (2019+)\n 
+[http://www.math.mcgill.ca/yyang/resources/papers/EEER.pdf Efficient Estimation in Expectile Regression Using Envelope Models] \n
+[http://www.math.mcgill.ca/yyang/resources/papers/EEER.pdf \[pdf\]] [http://www.math.mcgill.ca/yyang/resources/papers/EEER_supplemental_materials.pdf \[supplementary materials\]]\n
+/Preprint/
 
-- 	Mai, Q., Yang, Y. and Zou, H. (2017+)\n 
-[http://www.math.mcgill.ca/yyang/resources/papers/SS_msda.pdf _Multiclass Sparse Discriminant Analysis_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/SS_msda.pdf \[pdf\]] 
+- 	Fontaine, S., Yang, Y., Qian, W., Gu, Y. and Fan, B. (2019+)\n 
+[http://www.math.mcgill.ca/yyang/resources/papers/TCH_mstweedie.pdf A Unified Approach to Sparse Tweedie Modeling of Multi-Source Insurance Claim Data] \n
+[http://www.math.mcgill.ca/yyang/resources/papers/TCH_mstweedie.pdf \[pdf\]] [http://www.math.mcgill.ca/yyang/resources/papers/TCH_mstweedie_appendix.pdf \[supplementary materials\]] [https://github.com/fontaine618/MStweedie \[software\]] \n
+/Technometrics./ (Accepted)
+
+
+- 	Mai, Q., Yang, Y. and Zou, H. (2019)\n 
+[https://doi.org/10.5705/ss.202016.0117 Multiclass Sparse Discriminant Analysis] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/SS_msda.pdf \[pdf\]] [http://www.math.mcgill.ca/yyang/resources/papers/msda_supplemental_materials.pdf \[supplementary materials\]]
 	[http://cran.r-project.org/web/packages/msda/index.html \[software\]] \n
-/Statistica Sinica./ Accepted
+/Statistica Sinica./ 29, 97--111.
 
-- 	Yang, Y., Zhang, T. and Zou. H. (2017+)\n 
-[http://www.tandfonline.com/doi/full/10.1080/00401706.2017.1291450 _Flexible Expectile Regression in Reproducing Kernel Hilbert Space_] \n
-	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE.pdf \[pdf\]] 
-	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE_supp.pdf \[supplementary materials\]]
-	[http://cran.r-project.org/web/packages/KERE/index.html \[software\]]\n 
-/Technometrics./ Accepted
+- 	Zhang, T. and Yang, Y. (2018)\n 
+[http://jmlr.csail.mit.edu/papers/v19/17-473.html Robust PCA by Manifold Optimization] \n
+[http://www.math.mcgill.ca/yyang/resources/papers/JMLR_morpca.pdf \[pdf\]]\n
+/Journal of Machine Learning Research./ 19(80), 1--39.
 
 
-- 	Yang, Y., Qian, W. and Zou, H. (2017+)\n 
-[http://amstat.tandfonline.com/doi/abs/10.1080/07350015.2016.1200981 _Insurance Premium Prediction via Gradient Tree-Boosted Tweedie Compound Poisson Models_] \n
+- 	Yang, Y., Qian, W. and Zou, H. (2018)\n 
+[http://amstat.tandfonline.com/doi/abs/10.1080/07350015.2016.1200981 Insurance Premium Prediction via Gradient Tree-Boosted Tweedie Compound Poisson Models] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JBES_TDboost.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/TDboost_appendix.pdf \[supplementary materials\]]
 	[http://cran.r-project.org/web/packages/TDboost/index.html \[software\]]\n 
-/Journal of Business \& Economic Statistics./ Accepted
+/Journal of Business \& Economic Statistics./ 36(3), 456--470.
+
+- 	Ye, C., Yang, Y. and Yang, Y. (2018)\n 
+[http://dx.doi.org/10.1080/01621459.2017.1377080 Sparsity Oriented Importance Learning for High-dimensional Linear Regression] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/JASA_SOIL.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/SOIL_supplemental_materials.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/SOIL/index.html \[software\]]\n
+/Journal of the American Statistical Association./ 113(524), 1797--1812.
+
+- 	Bhatnagar, S., Yang, Y., Khundrakpam, B., Evans, A., Blanchette, M., Bouchard, L., Greenwood, C. (2018)\n 
+[https://doi.org/10.1002/gepi.22112 An Analytic Approach for Interpretable Predictive Models in High Dimensional Data  in the Presence of Interactions with Exposures] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/GE_eclust.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/GE_eclust_supp.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/eclust/index.html \[software\]]\n
+/Genetic Epidemiology./  42(3), 233--249.
+
+- 	Yang, Y., Zhang, T. and Zou. H. (2018)\n 
+[http://www.tandfonline.com/doi/full/10.1080/00401706.2017.1291450 Flexible Expectile Regression in Reproducing Kernel Hilbert Space] \n
+	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE.pdf \[pdf\]] 
+	[http://www.math.mcgill.ca/yyang/resources/papers/TCH_KERE_supp.pdf \[supplementary materials\]]
+	[http://cran.r-project.org/web/packages/KERE/index.html \[software\]]\n 
+/Technometrics./  60(1), 26–35.
 
 
 - Su, Z., Zhu, G., Chen, X. and Yang, Y. (2016) \n
-[https://doi.org/10.1093/biomet/asw036 _Sparse Envelope Model: Efficient Estimation and Response Variable Selection in Multivariate Linear Regression_] \n
+[https://doi.org/10.1093/biomet/asw036 Sparse Envelope Model: Efficient Estimation and Response Variable Selection in Multivariate Linear Regression] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/BM_SparseEnv.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/BM_SparseEnv_supp.pdf \[supplementary materials\]]\n 
 /Biometrika./ 103(3), 579-593.
 
 - 	Qian, W., Yang, Y. and Zou, H. (2016)\n 
-[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 _Tweedie's Compound Poisson Model with Grouped Elastic Net_] \n
+[http://www.tandfonline.com/doi/10.1080/10618600.2015.1005213 Tweedie's Compound Poisson Model with Grouped Elastic Net] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_HDtweedie.pdf \[pdf\]] 
 	[http://www.math.mcgill.ca/yyang/resources/papers/HDtweedie_appendix.pdf \[appendix\]] 
 	[http://cran.r-project.org/web/packages/HDtweedie/index.html \[software\]]\n
@@ -65,51 +85,51 @@
 
 
 - 	Yang, Y. and Zou, H. (2015)\n 
-[http://www.tandfonline.com/doi/abs/10.1080/00949655.2013.876024 _Nonparametric Multiple Expectile Regression via ER-Boost_] \n
+[http://www.tandfonline.com/doi/abs/10.1080/00949655.2013.876024 Nonparametric Multiple Expectile Regression via ER-Boost] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_erboost.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/erboost/index.html \[software\]]\n 
 /Journal of Statistical Computation and Simulation./ 85(7), 1442-1458. 
 
 - 	Cook, D., Su, Z. and Yang, Y. (2015)\n 
-[http://www.jstatsoft.org/v62/i08/ _A MATLAB Toolbox for Computing Envelope Estimators in Multivariate Linear Regression_] \n
+[http://www.jstatsoft.org/v62/i08/ A MATLAB Toolbox for Computing Envelope Estimators in Multivariate Linear Regression] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSS_envlp.pdf \[pdf\]] 
 	[https://github.com/emeryyi/envlp \[software\]]\n
 /Journal of Statistical Software./ 62(8). 
 
 
 - 	Yang, Y. and Zou, H. (2015)\n
-[http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 _A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems_] \n
+[http://link.springer.com/article/10.1007%2Fs11222-014-9498-5 A Fast Unified Algorithm for Solving Group-Lasso Penalized Learning Problems] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/STCO_gglasso.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/gglasso/index.html \[software\]]\n 
 /Statistics and Computing./ 25(6), 1129-1141. 
 
 
 - 	Yang, Y. and Zou, H. (2014)\n 
-[http://dx.doi.org/10.1080/00949655.2012.695374 _A Coordinate Majorization Descent Algorithm for l1 Penalized Learning_] \n
+[http://dx.doi.org/10.1080/00949655.2012.695374 A Coordinate Majorization Descent Algorithm for l1 Penalized Learning] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JSCS_l1trick.pdf \[pdf\]]\n 
 /Journal of Statistical Computation and Simulation./ 84(1), 84-95.
 
 
 - 	Righi, M., Yang, Y. and Ceretta, P. (2014)\n 
-[http://www.emeraldinsight.com/doi/abs/10.1108/S1569-375920140000096003 _Nonparametric Expectile Regression for Conditional Autoregressive Expected Shortfall Estimation_] \n
+[http://www.emeraldinsight.com/doi/abs/10.1108/S1569-375920140000096003 Nonparametric Expectile Regression for Conditional Autoregressive Expected Shortfall Estimation] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/shortfall.pdf \[pdf\]]  \n
 /Contemporary Studies in Economic and Financial Analysis./ 96, 83-95. 
 
 
 - 	Yang, Y. and Zou, H. (2013)\n 
-[http://dx.doi.org/10.1080/10618600.2012.680324 _An Efficient Algorithm for Computing The HHSVM and Its Generalizations_] \n
+[http://dx.doi.org/10.1080/10618600.2012.680324 An Efficient Algorithm for Computing The HHSVM and Its Generalizations] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/JCGS_gcdnet.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/gcdnet/index.html \[software\]]\n  
 /Journal of Computational and Graphical Statistics./ 22(2), 396-415.
 
 
 - 	Wang, S., Yang, Y., Chang, J. S., and Lin, F. P. (2013)\n 
-[http://thesai.org/Publications/ViewPaper?Volume=4&Issue=10&Code=IJACSA&SerialNo=6 _Using Penalized Regression with Parallel Coordinates for Visualization of Significance in High Dimensional Data_] \n
+[http://thesai.org/Publications/ViewPaper?Volume=4&Issue=10&Code=IJACSA&SerialNo=6 Using Penalized Regression with Parallel Coordinates for Visualization of Significance in High Dimensional Data] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/visualization.pdf \[pdf\]] \n
 /International Journal of Advanced Computer Science and Applications./ 4(10). 
 
 - 	Yang, Y. and Zou, H. (2013)\n 
-[http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 _A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions_] \n
+[http://dx.doi.org/10.4310/SII.2013.v6.n2.a1 A Cocktail Algorithm for Solving The Elastic Net Penalized Cox’s Regression in High Dimensions] \n
 	[http://www.math.mcgill.ca/yyang/resources/papers/SII_fastcox.pdf \[pdf\]] 
 	[http://cran.r-project.org/web/packages/fastcox/index.html \[software\]] \n
 /Statistics and Its Interface./ 6(2), 167-173.

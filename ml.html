@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="custom.css" type="text/css" />
+<title>MATH 783: Advanced Topics in Statistics: Machine Learning (4 credits)</title>
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+</head>
+<body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-7506982-8");
+    pageTracker._trackPageview();
+} catch(err) {}</script>
+<div id="layout-content">
+<div id="toptitle">
+<h1>MATH 783: Advanced Topics in Statistics: Machine Learning (4 credits)</h1>
+</div>
+<h3>Winter 2019 </h3>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="http://www.math.mcgill.ca/yyang/ml/syllabus_MATH783_winter2019.pdf" target=&ldquo;blank&rdquo;>Syllabus</a></p>
+</div></div>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="http://www.math.mcgill.ca/yyang/comp/template.tex" target=&ldquo;blank&rdquo;>Scribe</a></p>
+</div></div>
+<h2>Class Information</h2>
+<ul>
+<li><p><b>Instructor</b>: Yi Yang, Burnside Hall 1241</p>
+</li>
+<li><p><b>Lectures</b>: </p>
+<ul>
+<li><p>Monday; 10:05 AM - 11:25 AM Burnside Hall 1205</p>
+</li>
+<li><p>Wednesday; 3:05 PM – 4:25 PM, Burnside Hall 1234</p>
+</li></ul>
+</li>
+<li><p><b>Office hours</b>: </p>
+<ul>
+<li><p>Wednesday; 4:00 PM – 6:00 PM, Burnside Hall 1241</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<h2>Textbook</h2>
+<ul>
+<li><p><b>SB</b>: <a href="https://arxiv.org/pdf/1405.4980.pdf" target=&ldquo;blank&rdquo;>Convex Optimization: Algorithms and Complexity</a>, by Sebastien Bubeck.</p>
+</li>
+<li><p><b>PP</b>: <a href="https://arxiv.org/pdf/1712.07897.pdf" target=&ldquo;blank&rdquo;>Non-convex Optimization for Machine Learning</a>, by Prateek Jain and Purushottam Kar.</p>
+</li>
+<li><p><b>SLS</b>: <a href="https://web.stanford.edu/~hastie/StatLearnSparsity_files/SLS_corrected_1.4.16.pdf" target=&ldquo;blank&rdquo;>Statistical Learning with Sparsity</a>, by Trevor Hastie, Robert Tibshirani and Martin Wainwright. Chapter 7 and Chapter 10.</p>
+</li>
+</ul>
+<h2>Part 1 - Introduction</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=1" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Applications: sparse recovery, low-rank matrix recovery</p>
+</li>
+<li><p>Applications: robust linear regression, phase retrieval</p>
+</li>
+</ul>
+<p>Reading: </p>
+<ul>
+<li><p><b>SB</b> Chapter 1, 2</p>
+</li>
+<li><p><b>PP</b> Chapter 1</p>
+</li>
+</ul>
+<h2>Part 2 - Mathematical Tools</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=8" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Convex analysis</p>
+</li>
+<li><p>Convex projections</p>
+</li>
+<li><p>Projected gradient descent</p>
+</li>
+<li><p>Convergence guarantees for PGD</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><b>PP</b> Chapter 2</p>
+</li>
+<li><p><b>SB</b> Chapter 3</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/DuchiShSiCh08.pdf" target=&ldquo;blank&rdquo;>L1 Projection</a>: Duchi, John, et al. <b>Efficient projections onto the L1-ball for learning in high dimensions</b>, ICML 2008.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/resources/papers/mstweedie.pdf" target=&ldquo;blank&rdquo;>Multitask L1 Penalization</a>: Fontaine, S., et al.
+<b>A unified approach to sparse tweedie modeling of multi-source insurance claim data</b>, Technometrics, revision.
+<a href="http://www.math.mcgill.ca/yyang/resources/papers/mstweedie_supplemental_materials.pdf" target=&ldquo;blank&rdquo;>Supplemental Materials</a></p>
+</li>
+<li><p><a href="https://web.stanford.edu/class/ee392o/subgrad_method.pdf" target=&ldquo;blank&rdquo;>More detailed proof on projected gradient descent convergence</a></p>
+</li>
+</ul>
+<h2>Part 3 - Non-Convex Projected Gradient Descent</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=15" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Non-convex projections</p>
+</li>
+<li><p>Restricted strong convexity and smoothness</p>
+</li>
+<li><p>Generalized projected gradient descent</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><b>PP</b> Chapter 3</p>
+</li>
+</ul>
+<h2>Part 4 - Application: Sparse Recovery</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=17" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics:</p>
+<ul>
+<li><p>Problem formulation</p>
+</li>
+<li><p>Sparse regression: two perspectives</p>
+</li>
+<li><p>Sparse recovery via projected gradient descent</p>
+</li>
+<li><p>Restricted isometry and other design properties</p>
+</li>
+<li><p>Ensuring RIP and other Properties</p>
+</li>
+<li><p>A sparse recovery guarantee for IHT</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><b>PP</b> Chapter 7</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/cohen2009.pdf" target=&ldquo;blank&rdquo;>Nullspace Property</a>:  Cohen, Albert, et al. <b>Compressed sensing and best k-term approximation</b>, JAMS 2009.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/Raskutti_2010.pdf" target=&ldquo;blank&rdquo;>Restricted Eigenvalue Property</a>: Raskutti, Garvesh, et al. <b>Restricted eigenvalue properties for
+correlated gaussian designs</b>, JMLR 2010.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/candes_tao_2005.pdf" target=&ldquo;blank&rdquo;>Restricted Isometry Property</a>: Emmanuel Candes and Terence Tao. <b>Decoding by linear programming</b>, IEEE Transactions on Information Theory 2005.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/Jain_2014.pdf" target=&ldquo;blank&rdquo;>Restricted Strong Convexity/Smoothness Property</a>: Jain et al. <b>On iterative hard thresholding methods for high-dimensional m-Estimation</b>, NIPS 2014.</p>
+</li>
+</ul>
+<h2>Part 5 - Signal Approximation and Compressed Sensing</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=17" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Signals and Sparse Representations</p>
+<ul>
+<li><p>Orthogonal Bases</p>
+</li>
+<li><p>Approximation in Orthogonal Bases</p>
+</li>
+<li><p>Reconstruction in Overcomplete Bases</p>
+</li></ul>
+</li>
+<li><p>Random Projection and Approximation</p>
+<ul>
+<li><p>Johnson-Lindenstrauss Approximation</p>
+</li>
+<li><p>Compressed Sensing</p>
+</li>
+</ul>
+
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><b>SLS</b> Chapter 10</p>
+</li>
+<li><p><a href="https://www.raeng.org.uk/publications/other/candes-presentation-frontiers-of-engineering" target=&ldquo;blank&rdquo;>Compressive Sensing – A 25 Minute Tour by Emmanuel Candes</a></p>
+</li>
+<li><p><a href="http://www.ti.com/lit/ml/sprp592/sprp592.pdf" target=&ldquo;blank&rdquo;>Single-pixel Camera</a></p>
+</li>
+<li><p><a href="http://news.mit.edu/2017/faster-single-pixel-camera-lensless-imaging-0330" target=&ldquo;blank&rdquo;>A Faster Single-pixel Camera</a></p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/compressed.R" target=&ldquo;blank&rdquo;>Compressed Sensing R example</a></p>
+</li>
+</ul>
+<h2>Part 6 - Alternating Minimization</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=17" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Marginal convexity and other properties</p>
+</li>
+<li><p>Generalized alternating minimization</p>
+</li>
+<li><p>A convergence guarantee for gAM for convex problems</p>
+</li>
+<li><p>A convergence guarantee for gAM under MSC/MSS</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/glmnet.pdf" target=&ldquo;blank&rdquo;>Coordinate descent (coxnet)</a>: Simon, N., Friedman, J., Hastie, T., Tibshirani, R. <b>Regularization paths for Cox's proportional hazards model via coordinate descent</b>. JSS 2011.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/coxnet.pdf" target=&ldquo;blank&rdquo;>Coordinate descent (glmnet)</a>: Friedman, J., Hastie, T., &amp; Tibshirani, R. <b>Regularization paths for generalized linear models via coordinate descent</b>. JSS 2010.</p>
+</li>
+</ul>
+<h2>Part 7 - The EM Algorithm</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=17" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>The EM algorithm</p>
+</li>
+<li><p>Implementing the E/M steps</p>
+</li>
+<li><p>A monotonicity guarantee for EM</p>
+</li>
+<li><p>Local strong convavity and local strong smoothness</p>
+</li>
+<li><p>A local convergence guarantee for EM</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/EM.pdf" target=&ldquo;blank&rdquo;>EM Convergence</a>: Balakrishnan, S., Wainwright, M. J., Yu, B. <b>Statistical guarantees for the EM algorithm: From population to sample-based analysis</b>. The Annals of Statistics, 2017.</p>
+</li>
+</ul>
+<h2>Part 8 - Stochastic Optimization Techniques</h2>
+<p><a href="http://www.math.mcgill.ca/yyang/ml/note.pdf#page=17" target=&ldquo;blank&rdquo;><b>lecture notes</b></a> </p>
+<p>Topics: </p>
+<ul>
+<li><p>Motivating applications</p>
+</li>
+<li><p>Saddles and why they proliferate</p>
+</li>
+<li><p>The strict saddle property</p>
+</li>
+<li><p>The noisy gradient descent algorithm</p>
+</li>
+<li><p>A local convergence guarantee for NGD</p>
+</li>
+</ul>
+<p>Reading:</p>
+<ul>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/anandkumar14b.pdf" target=&ldquo;blank&rdquo;>Tensor Decompositions</a>: Anandkumar, A., Ge, R., Hsu, D., Kakade, S. M., and Telgarsky, M. <b>Tensor decompositions for learning latent variable models</b>. JMLR 2014.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/Ge2015.pdf" target=&ldquo;blank&rdquo;>Stochastic Gradient</a>: Ge, R., Huang, F., Jin, C., and Yuan, Y. <b>Escaping from saddle points-online stochastic gradient for tensor decomposition</b>. COLT 2015.</p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/paper/Choromanska2019.pdf" target=&ldquo;blank&rdquo;>Online Alternating Minimization</a>: Choromanska, A., Cowen, B., Kumaravel, S., Luss, R., Rigotti, M., Rish, I. and Bouneffouf, D. <b>Beyond backprop: online alternating minimization with auxiliary variables</b>.</p>
+</li>
+</ul>
+<h2>Homework</h2>
+<ul>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/hw1.pdf" target=&ldquo;blank&rdquo;>Homework 1</a></p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/hw2.pdf" target=&ldquo;blank&rdquo;>Homework 2</a></p>
+</li>
+<li><p><a href="http://www.math.mcgill.ca/yyang/ml/hw3.pdf" target=&ldquo;blank&rdquo;>Homework 3</a></p>
+</li>
+</ul>
+</div>
+</body>
+</html>

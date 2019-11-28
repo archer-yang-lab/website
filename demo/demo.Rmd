@@ -305,7 +305,7 @@ print(c(pl,REVOKED = pl1,AREA=pl2,merge.legends=TRUE))
 In the plot below, we visualize the effects of four important second order interactions using the joint partial dependence plots. These four interactions are AREA × MVR PTS, AREA × NPOLICY, AREA × REVOKED and AREA × TRAVTIME. These four interactions all involve the variable AREA: we can see that the marginal effects of MVR PTS, NPOLICY, REVOKED and TRAVTIME on the pure premium are greater for the policyholders living in the urban area (AREA="URBAN") than those living in the rural area (AREA="RURAL"). For example, a strong AREA × MVR PTS interaction suggests that for the policyholders living in the rural area, motor vehicle record points of the policyholders have a weaker positive marginal effect on the expected pure premium than for the policyholders living in the urban area.
 
 
-```{r inter, echo=TRUE}
+```{r inter, echo=TRUE, cache=TRUE}
 load("partial_image1.rda")
 
 wireframe(marginal.effect~AREA+MVR_PTS,
@@ -313,7 +313,7 @@ scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urb
 data=tmp1,screen = list(z = 30, x = -60), main="(a)",
 zlab="mu(x)",ylab="MVR_PTS",
 par.settings = list(axis.line = list(col = "transparent")),
-lwd=0.6
+lwd=0.6, shade=TRUE
 )
 
 wireframe(marginal.effect~AREA+NPOLICY,
@@ -321,7 +321,7 @@ data=tmp2,screen = list(z = 120, x = -60), main="(b)",
 scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban'))),
 zlab="mu(x)",
 par.settings = list(axis.line = list(col = "transparent")),
-lwd=0.6
+lwd=0.6, shade=TRUE
 )
 
 wireframe(marginal.effect~AREA+REVOKED,
@@ -331,7 +331,7 @@ y = list(at = c(1.25, 1.75), lab = c('No', 'Yes'))
 ),
 zlab="mu(x)",
 par.settings = list(axis.line = list(col = "transparent")),
-lwd=0.6
+lwd=0.6, shade=TRUE
 )
 
 wireframe(marginal.effect~AREA+TRAVTIME,
@@ -339,7 +339,7 @@ data=tmp4,screen = list(z = 120, x = -60), main="(d)",
 scales = list(arrows = FALSE, x = list(at = c(1.25, 1.75), lab = c('Rural', 'Urban'))),
 zlab="mu(x)",
 par.settings = list(axis.line = list(col = "transparent")),
-lwd=0.6
+lwd=0.6, shade=TRUE
 )
 
 ```

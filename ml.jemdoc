@@ -1,0 +1,189 @@
+# jemdoc: nofooter,addcss{custom.css},analytics{UA-7506982-8}
+= MATH 783: Advanced Topics in Statistics: Machine Learning (4 credits)
+
+=== Winter 2019 
+
+~~~
+[http://www.math.mcgill.ca/yyang/ml/syllabus_MATH783_winter2019.pdf Syllabus]
+~~~
+
+~~~
+[http://www.math.mcgill.ca/yyang/comp/template.tex Scribe]
+~~~
+
+
+== Class Information
+- *Instructor*: Yi Yang, Burnside Hall 1241
+- *Lectures*: 
+-- Monday; 10:05 AM - 11:25 AM Burnside Hall 1205
+-- Wednesday; 3:05 PM – 4:25 PM, Burnside Hall 1234
+- *Office hours*: 
+-- Wednesday; 4:00 PM – 6:00 PM, Burnside Hall 1241
+
+== Textbook
+- *SB*: [https://arxiv.org/pdf/1405.4980.pdf Convex Optimization: Algorithms and Complexity], by Sebastien Bubeck.
+- *PP*: [https://arxiv.org/pdf/1712.07897.pdf Non-convex Optimization for Machine Learning], by Prateek Jain and Purushottam Kar.
+- *SLS*: [https://web.stanford.edu/~hastie/StatLearnSparsity_files/SLS_corrected_1.4.16.pdf Statistical Learning with Sparsity], by Trevor Hastie, Robert Tibshirani and Martin Wainwright. Chapter 7 and Chapter 10.
+
+
+
+== Part 1 - Introduction
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=1 *lecture notes*] 
+
+Topics: 
+
+- Applications: sparse recovery, low-rank matrix recovery
+- Applications: robust linear regression, phase retrieval
+
+Reading: 
+
+- *SB* Chapter 1, 2
+- *PP* Chapter 1
+
+
+
+
+
+== Part 2 - Mathematical Tools
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=8 *lecture notes*] 
+
+Topics: 
+
+- Convex analysis
+- Convex projections
+- Projected gradient descent
+- Convergence guarantees for PGD
+
+Reading:
+
+- *PP* Chapter 2
+- *SB* Chapter 3
+- [http://www.math.mcgill.ca/yyang/ml/paper/DuchiShSiCh08.pdf L1 Projection]: Duchi, John, et al. *Efficient projections onto the L1-ball for learning in high dimensions*, ICML 2008.
+- [http://www.math.mcgill.ca/yyang/resources/papers/mstweedie.pdf Multitask L1 Penalization]: Fontaine, S., et al.
+*A unified approach to sparse tweedie modeling of multi-source insurance claim data*, Technometrics, revision.
+[http://www.math.mcgill.ca/yyang/resources/papers/mstweedie_supplemental_materials.pdf Supplemental Materials]
+- [https://web.stanford.edu/class/ee392o/subgrad_method.pdf More detailed proof on projected gradient descent convergence]
+
+
+== Part 3 - Non-Convex Projected Gradient Descent
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=15 *lecture notes*] 
+
+Topics: 
+
+- Non-convex projections
+- Restricted strong convexity and smoothness
+- Generalized projected gradient descent
+
+Reading:
+
+- *PP* Chapter 3
+
+
+== Part 4 - Application: Sparse Recovery
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=17 *lecture notes*] 
+
+Topics:
+ 
+- Problem formulation
+- Sparse regression: two perspectives
+- Sparse recovery via projected gradient descent
+- Restricted isometry and other design properties
+- Ensuring RIP and other Properties
+- A sparse recovery guarantee for IHT
+
+Reading:
+
+- *PP* Chapter 7
+- [http://www.math.mcgill.ca/yyang/ml/paper/cohen2009.pdf Nullspace Property]:  Cohen, Albert, et al. *Compressed sensing and best k-term approximation*, JAMS 2009.
+- [http://www.math.mcgill.ca/yyang/ml/paper/Raskutti_2010.pdf Restricted Eigenvalue Property]: Raskutti, Garvesh, et al. *Restricted eigenvalue properties for
+correlated gaussian designs*, JMLR 2010.
+- [http://www.math.mcgill.ca/yyang/ml/paper/candes_tao_2005.pdf Restricted Isometry Property]: Emmanuel Candes and Terence Tao. *Decoding by linear programming*, IEEE Transactions on Information Theory 2005.
+- [http://www.math.mcgill.ca/yyang/ml/paper/Jain_2014.pdf Restricted Strong Convexity/Smoothness Property]: Jain et al. *On iterative hard thresholding methods for high-dimensional m-Estimation*, NIPS 2014.
+
+
+
+== Part 5 - Signal Approximation and Compressed Sensing
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=17 *lecture notes*] 
+
+Topics: 
+
+- Signals and Sparse Representations
+-- Orthogonal Bases
+-- Approximation in Orthogonal Bases
+-- Reconstruction in Overcomplete Bases
+- Random Projection and Approximation
+-- Johnson-Lindenstrauss Approximation
+-- Compressed Sensing
+
+Reading:
+- *SLS* Chapter 10
+- [https://www.raeng.org.uk/publications/other/candes-presentation-frontiers-of-engineering Compressive Sensing – A 25 Minute Tour by Emmanuel Candes]
+- [http://www.ti.com/lit/ml/sprp592/sprp592.pdf Single-pixel Camera]
+- [http://news.mit.edu/2017/faster-single-pixel-camera-lensless-imaging-0330 A Faster Single-pixel Camera]
+- [http://www.math.mcgill.ca/yyang/ml/compressed.R Compressed Sensing R example]
+
+
+== Part 6 - Alternating Minimization
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=17 *lecture notes*] 
+
+Topics: 
+
+- Marginal convexity and other properties
+- Generalized alternating minimization
+- A convergence guarantee for gAM for convex problems
+- A convergence guarantee for gAM under MSC/MSS
+
+Reading:
+
+- [http://www.math.mcgill.ca/yyang/ml/paper/glmnet.pdf Coordinate descent (coxnet)]: Simon, N., Friedman, J., Hastie, T., Tibshirani, R. *Regularization paths for Cox's proportional hazards model via coordinate descent*. JSS 2011.
+- [http://www.math.mcgill.ca/yyang/ml/paper/coxnet.pdf Coordinate descent (glmnet)]: Friedman, J., Hastie, T., & Tibshirani, R. *Regularization paths for generalized linear models via coordinate descent*. JSS 2010.
+
+
+== Part 7 - The EM Algorithm
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=17 *lecture notes*] 
+
+Topics: 
+
+- The EM algorithm
+- Implementing the E/M steps
+- A monotonicity guarantee for EM
+- Local strong convavity and local strong smoothness
+- A local convergence guarantee for EM
+
+Reading:
+
+- [http://www.math.mcgill.ca/yyang/ml/paper/EM.pdf EM Convergence]: Balakrishnan, S., Wainwright, M. J., Yu, B. *Statistical guarantees for the EM algorithm: From population to sample-based analysis*. The Annals of Statistics, 2017.
+
+
+== Part 8 - Stochastic Optimization Techniques
+
+[http://www.math.mcgill.ca/yyang/ml/note.pdf\#page=17 *lecture notes*] 
+
+Topics: 
+
+- Motivating applications
+- Saddles and why they proliferate
+- The strict saddle property
+- The noisy gradient descent algorithm
+- A local convergence guarantee for NGD
+
+Reading:
+
+- [http://www.math.mcgill.ca/yyang/ml/paper/anandkumar14b.pdf Tensor Decompositions]: Anandkumar, A., Ge, R., Hsu, D., Kakade, S. M., and Telgarsky, M. *Tensor decompositions for learning latent variable models*. JMLR 2014.
+- [http://www.math.mcgill.ca/yyang/ml/paper/Ge2015.pdf Stochastic Gradient]: Ge, R., Huang, F., Jin, C., and Yuan, Y. *Escaping from saddle points-online stochastic gradient for tensor decomposition*. COLT 2015.
+- [http://www.math.mcgill.ca/yyang/ml/paper/Choromanska2019.pdf Online Alternating Minimization]: Choromanska, A., Cowen, B., Kumaravel, S., Luss, R., Rigotti, M., Rish, I. and Bouneffouf, D. *Beyond backprop: online alternating minimization with auxiliary variables*.
+
+
+== Homework
+- [http://www.math.mcgill.ca/yyang/ml/hw1.pdf Homework 1]
+- [http://www.math.mcgill.ca/yyang/ml/hw2.pdf Homework 2]
+- [http://www.math.mcgill.ca/yyang/ml/hw3.pdf Homework 3]
+
+

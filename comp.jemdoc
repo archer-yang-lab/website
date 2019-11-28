@@ -1,0 +1,148 @@
+# jemdoc: nofooter,addcss{custom.css},analytics{UA-7506982-8}
+= MATH 680: Computation Intensive Statistics
+
+=== Fall 2019
+
+*Instructor*: Yi Yang \n
+*Office*: Burnside 1241\n
+*Email*: yi.yang6@mcgill.ca\n
+*Website*: www.math.mcgill.ca/yyang/\n
+*Lecture meeting time*: M, W 3:35 pm – 4:55 pm in Burnside 708\n
+*Office Hour*: M, W 5:00 pm – 6:00 pm in Burnside 1241\n
+*Prerequisites*: MATH 556, MATH 557 or permission of instructor\n
+
+=== Grading
+
+The homework assignments are worth 65\% of the course grade, the project is worth 30% of the course grade, and class participation is worth 5\%.
+
+
+
+=== Course project
+
+There will be a course project, with two milestones, a final report, and a class conference. Students are required to complete a course project. 2 students can form a team, the report must specify their individual contribution in their team project. The projects are selected by the students and require approval from the instructor. The team will present their project in class and a written technical report must be submitted by Dec 3. More information will be given during October.
+
+=== Policy on collaboration
+
+Collaboration on homework assignments with fellow students is encouraged. However, such collaboration should be clearly acknowledged, by listing the names of the students with whom you have had discussions concerning your solution.
+
+=== Programming languages
+
+No restriction.
+
+ 
+
+== Papers
+\n
+Optional, no required textbook:
+
+- *ESL*: [https://web.stanford.edu/~hastie/Papers/ESLII.pdf The Elements of Statistical Learning (2nd Ed)] by T. Hastie, R. Tibshirani and J. Friedman
+- *PR*: Pattern Recognition by Christopher Bishop
+- *CVX*: Convex Optimization by Boyd and Vandenberghe
+- *R*: [http://adv-r.had.co.nz/ Advanced R] by H. Wickham
+- *PA*: [http://stanford.edu/~boyd//papers/pdf/prox_algs.pdf Proximal Algorithms] by Neal Parikh and Stephen Boyd
+- *OSIP*: [http://www.math.mcgill.ca/yyang/comp/papers/OSIP.pdf  Optimization with Sparsity-Inducing Penalties] by Bach, Jenatton, Mairal and Obozinski
+
+== Lecture Schedule
+\n
+~~~
+{}{table}{Class}
+
+Introduction	| [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/intro.pdf Slides] |  [http://www.math.mcgill.ca/yyang/comp/notes/note0.pdf Note] | - | *PR* 1, *R* 1-3 ||
+
+Matrix Decomposition | [http://www.math.mcgill.ca/yyang/comp/notes/slide2.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note1.pdf Note] | [http://www.math.mcgill.ca/yyang/comp/notes/001-source-code.R Code] | *R* 4-5 ||
+
+Principle Component Analysis | - | - | - | *PR* 12, *ESL* 14.5 ||
+
+Ridge Regression | - | - | - | *PR* 3.1, *ESL* 3.1-3.2 3.4.1 ||
+
+Cross Validation | - | [http://www.math.mcgill.ca/yyang/comp/notes/note2.pdf Note] | - | *ESL*  7 ||
+
+Convex Sets and Functions | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/convex-fns.pdf Slides] | - | - | *CVX* 2-3 ||
+
+Optimization Basics | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/convex-opt.pdf Slides] | - | - | *CVX* 4 ||
+
+Gradient Descent | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note_grad.pdf Note] | - | *CVX*  9.1-9.4 ||
+
+Gradient Boosting | [http://www.math.mcgill.ca/yyang/comp/notes/slide_boost.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note3_gbm.pdf Note] | - | *ESL*  9.2, 10, *Paper* 3, 4 ||
+
+Subgradient | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/subgrad.pdf Slides] | - | - | - ||
+
+Proximal Gradient Descent and Lasso| [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/prox-grad.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note4.pdf Note] | [http://www.math.mcgill.ca/yyang/comp/notes/note4code.R Code]  | *ESL*  3 18 *PA* 3, 4, 6, 7, *Paper* 5 ||
+
+Structural Penalization | - | - | - |*OSIP* 1, *Paper* 6, 7 ||
+
+Interaction Selection | - | - | - | *Paper* 8-11 ||
+
+Duality | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/dual-gen.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note_duality.pdf Note] | -  | *CVX*  5 ||
+
+KKT conditions | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/kkt.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note_kkt.pdf Note] | - | *CVX*  5  ||
+
+Duality Uses | [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/dual-corres.pdf Slides] | [http://www.math.mcgill.ca/yyang/comp/notes/note_dual_use.pdf Note] | - | *CVX*  5  ||
+
+Structural Penalization (Continued)| - | [http://www.math.mcgill.ca/yyang/comp/notes/note_proximal.pdf Note] | - | *PA* 1, 3, 6 ||
+
+Support Vector Machines | - | [http://www.math.mcgill.ca/yyang/comp/notes/note_svm.pdf Note] | - | *ESL*  4.5 5.8 12 *PR*  6 7 ||
+
+
+MM and EM Algorithms| - | [http://www.math.mcgill.ca/yyang/comp/notes/note5.pdf Note] | [http://www.math.mcgill.ca/yyang/comp/notes/note5code.R Code] | *ESL* 8.5 *PR* 9 ||
+
+Monte Carlo | | | | ||
+
+MCMC | | | | ||
+
+Variational approximations | | | | 
+
+
+
+
+# Stochastic Gradient Descent| [http://www.stat.cmu.edu/~ryantibs/convexopt/lectures/stochastic-gd.pdf Slides] | - | - | - ||
+#
+
+
+~~~ 
+
+== Homework
+\n
+- [http://www.math.mcgill.ca/yyang/comp/hw/hw1.pdf Homework 1] (due on Sep 25 11:59PM)
+- [http://www.math.mcgill.ca/yyang/comp/hw/hw2.pdf Homework 2] (due on Nov 6 11:59PM)
+ # -- [http://www.math.mcgill.ca/yyang/comp/data/circle.csv circle.csv]
+ # -- [http://www.math.mcgill.ca/yyang/comp/data/lenna_64.csv lenna\_64.csv]
+ -- [http://www.math.mcgill.ca/yyang/comp/data/FHT.rda FHT.rda]
+ -- [http://www.math.mcgill.ca/yyang/comp/data/Y_train.csv Y\_train.csv]
+ -- [http://www.math.mcgill.ca/yyang/comp/data/X_train.csv  X\_train.csv]
+# - [http://www.math.mcgill.ca/yyang/comp/hw3.pdf Homework 3]
+
+== References
+\n
+# . [http://epubs.siam.org/doi/pdf/10.1137/050623280 Google PageRank Algorithm]
+. [http://www.math.mcgill.ca/yyang/comp/papers/ridge.pdf Polynomial Curve Fitting and Ridge Regression]
+. [http://www.math.mcgill.ca/yyang/comp/papers/cv.pdf Cross Validation]
+. [http://www.math.mcgill.ca/yyang/comp/papers/boosting.pdf Gradient Boosting (original paper)]
+. [http://www.math.mcgill.ca/yyang/comp/papers/gbmreview.pdf Gradient Boosting (review paper)]
+. [http://www.math.mcgill.ca/yyang/comp/papers/FISTA.pdf FISTA]
+. [http://www.math.mcgill.ca/yyang/comp/papers/jenatton11a.pdf Structural Penalization]
+. [http://www.math.mcgill.ca/yyang/comp/papers/jenatton2011.pdf Sparsity-inducing norm]
+. [http://www.math.mcgill.ca/yyang/comp/papers/SHIM.pdf SHIM]
+. [http://www.math.mcgill.ca/yyang/comp/papers/Hiernet.pdf Hiernet]
+. [http://www.math.mcgill.ca/yyang/comp/papers/GLINTERNET.pdf GLINTERNET]
+. [http://www.math.mcgill.ca/yyang/comp/papers/CAP.pdf CAP]
+
+
+== Datasets
+\n
+- [http://www.math.mcgill.ca/yyang/comp/data/cat.jpg cat]
+- [http://www.math.mcgill.ca/yyang/comp/data/zip.train.RData zip]
+
+~~~
+[http://www.math.mcgill.ca/yyang/comp/template.tex Scribe]
+~~~
+ 
+~~~
+== Final Project
+\n
+- [http://www.math.mcgill.ca/yyang/comp/final_req.pdf Requirements]
+- [http://www.math.mcgill.ca/yyang/comp/ProjectTemplate.zip Project Templates]
+~~~
+
+
+

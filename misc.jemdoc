@@ -1,0 +1,34 @@
+# jemdoc: menu{MENU}{misc.html},nofooter,addcss{custom.css},analytics{UA-7506982-8}
+= Misc
+
+
+Download from urls:
+~~~
+wget -r -l 10 -k --no-parent \[url address\]
+~~~
+
+View old commands. Can also do a \"CTRL\+R\" to check history:
+~~~
+history
+~~~
+
+Changed file permissions with \"chmod\", x for exec, u for user
+~~~
+chmod u+x file1
+~~~
+
+use \"\\\" character to split a command over multiple lines
+~~~
+chmod u+x \\ \n
+file1
+~~~
+
+Set alias
+~~~
+alias jemdoc=\'\/Applications\/jemdoc\'
+~~~
+
+Add a path to PATH
+~~~
+PATH=\$PATH:\~\/opt\/bin:\~\/opt\/node\/bin
+~~~
